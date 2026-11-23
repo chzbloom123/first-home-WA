@@ -1,0 +1,1306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your First Home in Washington</title>
+<meta name="description" content="A free, plain-language overview of buying a first home in Washington State. No sign-up, no ads, no tracking.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700&family=Bitter:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  /* layout: one reading column; the home page is a numbered rail of eight steps */
+  --paper:#f3f6f2; --surface:#ffffff; --ink:#1b2725; --muted:#566660; --accent:#1c5b47; --accent-soft:#dcebe3; --rule:#cdd7d1; --money:#734700; --money-soft:#f6ebcf;
+  --display:"Bitter", Georgia, "Times New Roman", serif;
+  --body:"Public Sans", "Segoe UI", Verdana, sans-serif;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){ --paper:#111816; --surface:#19231f; --ink:#e5ece8; --muted:#a2b0aa; --accent:#80c9ab; --accent-soft:#1f372d; --rule:#2d3c36; --money:#eac67d; --money-soft:#382d15; color-scheme: dark; }
+}
+:root[data-theme="dark"]{ --paper:#111816; --surface:#19231f; --ink:#e5ece8; --muted:#a2b0aa; --accent:#80c9ab; --accent-soft:#1f372d; --rule:#2d3c36; --money:#eac67d; --money-soft:#382d15; color-scheme: dark; }
+*{box-sizing:border-box}
+html{font-size:112.5%;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);line-height:1.65}
+a{color:var(--accent);text-underline-offset:.18em}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.wrap{max-width:44rem;margin:0 auto;padding:0 1.1rem}
+header.site{background:var(--surface);border-bottom:1px solid var(--rule)}
+header.site .wrap{display:flex;flex-direction:column;gap:.6rem;padding-top:1rem;padding-bottom:.8rem}
+.brand{font-family:var(--display);font-weight:700;font-size:1.15rem;color:var(--ink);text-decoration:none}
+.brand small{display:block;font-family:var(--body);font-weight:400;font-size:.8rem;color:var(--muted)}
+nav ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:.3rem .35rem}
+nav a{display:block;padding:.2rem .6rem;border:1px solid var(--rule);border-radius:999px;text-decoration:none;font-size:.85rem;color:var(--ink);background:var(--paper)}
+nav a[aria-current="page"]{background:var(--accent);border-color:var(--accent);color:var(--surface)}
+main{padding:1.6rem 0 2.5rem}
+h1,h2,h3{font-family:var(--display);line-height:1.25;text-wrap:balance}
+h1{font-size:1.75rem;margin:0 0 .8rem}
+h2{font-size:1.25rem;margin:2.2rem 0 .6rem;padding-top:1rem;border-top:1px solid var(--rule)}
+h3{font-size:1.08rem;margin:1.5rem 0 .4rem}
+p,ul,ol,dl{margin:0 0 1rem}
+ul,ol{padding-left:1.3rem}
+li{margin-bottom:.35rem}
+.lead{font-size:1.08rem}
+.promise{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:.4rem}
+.promise li{margin:0;padding:.15rem .7rem;border-radius:999px;background:var(--accent-soft);font-size:.85rem}
+.jump{columns:2;column-gap:2rem;font-size:.95rem}
+.steps{list-style:none;padding:0;margin:1.5rem 0 1rem}
+.step{position:relative;margin:0;padding:0 0 1.6rem 3.1rem;border-left:2px solid var(--rule);margin-left:1.05rem}
+.step:last-child{border-left-color:transparent}
+.step h3{margin:0 0 .6rem;font-size:1.2rem;padding-top:.15rem}
+.num{position:absolute;left:-1.1rem;top:0;width:2.1rem;height:2.1rem;border-radius:50%;background:var(--accent);color:var(--surface);display:flex;align-items:center;justify-content:center;font-family:var(--display);font-weight:700;font-size:1rem}
+.meta{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.5rem;margin:0 0 .9rem}
+.meta div{background:var(--surface);border:1px solid var(--rule);border-radius:6px;padding:.4rem .6rem}
+.meta div:nth-child(2){background:var(--money-soft);border-color:transparent}
+.meta div:nth-child(2) dt{color:var(--money)}
+.meta dt{font-size:.72rem;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
+.meta dd{margin:0;font-size:.88rem;line-height:1.4}
+.deeper{font-weight:700}
+.steplinks{font-size:.92rem}
+.tablewrap{overflow-x:auto;margin:0 0 1.1rem;border:1px solid var(--rule);border-radius:6px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:.9rem;line-height:1.45}
+th,td{text-align:left;vertical-align:top;padding:.5rem .65rem;border-bottom:1px solid var(--rule)}
+tr:last-child td{border-bottom:0}
+th{font-family:var(--body);font-weight:700;background:var(--accent-soft)}
+td:first-child{font-weight:700;min-width:7.5rem}
+#gloss-filter{font:inherit;padding:.35rem .6rem;border:1px solid var(--rule);border-radius:6px;background:var(--surface);color:var(--ink);width:min(100%,18rem)}
+.term{padding:.6rem 0;border-bottom:1px solid var(--rule)}
+.term dt{font-weight:700}
+.term dd{margin:0}
+.checks{list-style:none;padding:0}
+.checks li{display:flex;gap:.6rem;align-items:flex-start;margin-bottom:.5rem}
+.checks input{width:1.15rem;height:1.15rem;margin-top:.3rem;accent-color:var(--accent);flex:none}
+.checks input:checked+label{color:var(--muted);text-decoration:line-through}
+button{font:inherit;padding:.3rem .8rem;border:1px solid var(--accent);border-radius:6px;background:var(--surface);color:var(--accent);cursor:pointer}
+.back{margin-top:2rem;padding-top:1rem;border-top:1px solid var(--rule)}
+footer.site{border-top:1px solid var(--rule);background:var(--surface);font-size:.85rem;color:var(--muted)}
+footer.site .wrap{padding-top:1rem;padding-bottom:1.5rem}
+footer.site p{margin:0 0 .5rem}
+@media (max-width:30rem){ .meta{grid-template-columns:1fr} .jump{columns:1} h1{font-size:1.5rem} .step{padding-left:2.2rem} }
+@media (prefers-reduced-motion:no-preference){ html{scroll-behavior:smooth} }
+@media print{ header.site nav,.back,#chk-clear,#gloss-filter,label[for="gloss-filter"]{display:none} body{background:#fff;color:#000} a{color:#000} .tablewrap{overflow:visible} }
+</style>
+</head>
+<body>
+<header class="site"><div class="wrap">
+<a class="brand" href="#home">Your First Home in Washington<small>A plain-language guide to buying, start to keys</small></a>
+<nav aria-label="Sections"><ul><li><a href="#home" data-view="home">Start</a></li><li><a href="#money" data-view="money">Money</a></li><li><a href="#loans" data-view="loans">Loans</a></li><li><a href="#help" data-view="help">Help</a></li><li><a href="#home-types" data-view="home-types">Home types</a></li><li><a href="#contract" data-view="contract">Contract</a></li><li><a href="#inspection" data-view="inspection">Inspection</a></li><li><a href="#first-year" data-view="first-year">First year</a></li><li><a href="#tri-cities" data-view="tri-cities">Tri-Cities</a></li><li><a href="#glossary" data-view="glossary">Glossary</a></li><li><a href="#checklist" data-view="checklist">Checklist</a></li><li><a href="#about" data-view="about">About</a></li></ul></nav>
+</div></header>
+<main><div class="wrap">
+<section class="view" id="home" aria-labelledby="home-h"><h1 id="home-h">Buying your first home in Washington, start to keys</h1>
+<div class="lead"><p>This page walks you through the whole process, from first thought to keys in hand. It takes about ten minutes to read. You do not need to click anything to follow it. The links are there if you want to do a step or check a fact.</p></div>
+<ul class="promise"><li>No sign-up</li><li>No ads</li><li>No tracking</li><li>Not a lender, broker or inspector</li></ul>
+<h2>The short version</h2>
+<ul>
+<li><strong>You apply for every common loan through a lender.</strong> FHA, VA and USDA do not hand out loans at a government counter.</li>
+<li><strong>You need three piles of cash:</strong> a down payment, closing costs, and a cushion for moving and early repairs.</li>
+<li><strong>Washington gives you a short window to cancel</strong> after you get the seller's disclosure form.</li>
+<li><strong>The inspection is your one close look</strong> at the house before you are committed.</li>
+<li><strong>Many dollar amounts and deadlines are set in your contract, not in law.</strong> Read every blank before you sign.</li>
+</ul>
+<h2>How long it takes</h2>
+<p>No Washington agency publishes a typical timeline. Freddie Mac's national guide says buyers look at about 10 homes over about 10 weeks, and that closing comes 30 to 60 days after a seller accepts your offer. Getting your credit and savings ready comes before all of that and has no set length.</p>
+<h2>The eight steps</h2>
+<ol class="jump"><li><a href="#step-1">Get your money ready</a></li><li><a href="#step-2">Take the free homebuyer class</a></li><li><a href="#step-3">Talk to lenders and get preapproved</a></li><li><a href="#step-4">Hire a broker and look at homes</a></li><li><a href="#step-5">Make an offer and put down earnest money</a></li><li><a href="#step-6">Read the disclosure and inspect the house</a></li><li><a href="#step-7">Finish the loan: appraisal, title and insurance</a></li><li><a href="#step-8">Close and get your keys</a></li></ol>
+<ol class="steps"><li class="step" id="step-1">
+<h3><span class="num" aria-hidden="true">1</span>Get your money ready</h3>
+<dl class="meta"><div><dt>Who</dt><dd>You</dd></div><div><dt>Money that moves</dt><dd>Nothing yet</dd></div><div><dt>How long</dt><dd>As long as you need</dd></div></dl>
+<p>Start with your credit. You can pull free reports from all three credit bureaus every week at <a class="ext" href="https://www.annualcreditreport.com">AnnualCreditReport.com</a>. Fixing a mistake is free, and the bureau has 30 days to look into it.</p>
+<p>Next, size up the cash. You need three piles:</p>
+<ul>
+<li><strong>A down payment.</strong> Zero on VA and USDA loans if you qualify. As low as 3% on some conventional loans. At least 3.5% on an FHA loan.</li>
+<li><strong>Closing costs.</strong> The federal consumer agency says these run about 2% to 5% of the price, on top of the down payment.</li>
+<li><strong>A cushion.</strong> Moving, utility set-up and early repairs all cost money. No official number exists for this one.</li>
+</ul>
+<p>Lenders also look at your debt-to-income ratio. That is your monthly debt payments, with the new house payment added in, divided by your income before taxes. Each loan program sets its own ceiling.</p>
+<p>One warning from the federal consumer agency: do not open new credit just before or during the loan process.</p>
+<p class="deeper"><a href="#money">More on this: Money and costs</a></p>
+
+</li><li class="step" id="step-2">
+<h3><span class="num" aria-hidden="true">2</span>Take the free homebuyer class</h3>
+<dl class="meta"><div><dt>Who</dt><dd>Loan officers and real estate professionals who partner with the state Housing Finance Commission</dd></div><div><dt>Money that moves</dt><dd>Free, or $50 for the self-study version</dd></div><div><dt>How long</dt><dd>About five hours</dd></div></dl>
+<p>Washington's Housing Finance Commission sponsors a free homebuyer class. It runs in person and by live video almost every day.</p>
+<p>You <strong>must</strong> take it if you want a Commission home loan or the state's down payment help. Each person who signs the loan needs their own certificate, and the certificate lasts two years. If you are not using those programs the class is optional, but it covers this whole process with a live teacher you can ask questions.</p>
+<p>The state's down payment help is a second loan with no monthly payments. You pay it back when you sell, refinance or move out. Tri-Cities buyers may also have a local program.</p>
+<p class="deeper"><a href="#help">More on this: Help and classes</a></p>
+<ul class="steplinks"><li><a class="ext" href="https://heretohome.org/homebuyer-education-classes-list/">Find a class</a></li></ul>
+</li><li class="step" id="step-3">
+<h3><span class="num" aria-hidden="true">3</span>Talk to lenders and get preapproved</h3>
+<dl class="meta"><div><dt>Who</dt><dd>A loan officer at a bank, credit union or mortgage company</dd></div><div><dt>Money that moves</dt><dd>Only a credit report fee at this stage</dd></div><div><dt>How long</dt><dd>Varies by lender</dd></div></dl>
+<p>Here is the idea most first-time buyers miss. <strong>FHA insures loans. VA and USDA guarantee loans. A lender makes the loan.</strong> So you apply through a lender for all of them, and the steps are the same.</p>
+<p>Ask for a prequalification or preapproval letter. Lenders use those two words differently, and neither one is a promised loan.</p>
+<p>Then ask for a <strong>Loan Estimate</strong>. It is a three-page form that shows the rate, the monthly payment and the closing costs. A lender must send it within three business days once it has six things: your name, income, Social Security number, the property address, the home's estimated value and the loan amount you want.</p>
+<p>Get Loan Estimates from more than one lender and compare them. Mortgage credit checks inside a 45-day window count as one, so shopping around does little harm to your score. Until you have a Loan Estimate and say "go ahead," a lender may charge you only for the credit report.</p>
+<p class="deeper"><a href="#loans">More on this: Loan types</a></p>
+<ul class="steplinks"><li><a class="ext" href="https://www.nmlsconsumeraccess.org/">Check a loan officer&#x27;s license</a></li><li><a class="ext" href="https://www.consumerfinance.gov/owning-a-home/compare/">How to compare Loan Estimates</a></li></ul>
+</li><li class="step" id="step-4">
+<h3><span class="num" aria-hidden="true">4</span>Hire a broker and look at homes</h3>
+<dl class="meta"><div><dt>Who</dt><dd>A real estate broker, which is Washington&#x27;s word for agent</dd></div><div><dt>Money that moves</dt><dd>Nothing yet</dd></div><div><dt>How long</dt><dd>About 10 weeks for a typical buyer</dd></div></dl>
+<p>In Washington a real estate firm must have a written <strong>brokerage services agreement</strong> with you. It lasts 60 days unless you agree to longer. It names your broker, says whether the deal is exclusive, and states what the firm will be paid.</p>
+<p>That pay can come from you, the seller, or be shared between firms. It is whatever the agreement says, so read that part before you sign. Your broker must also hand you a state pamphlet called "Real Estate Brokerage in Washington."</p>
+<p>The kind of home you pick changes the process. A condo, a manufactured home, a brand-new house and a duplex each add their own rules.</p>
+<p>In the Tri-Cities, ask one extra question about every house: which irrigation district is it in? The yearly charge stays with the land whether or not you use the water.</p>
+<p class="deeper"><a href="#home-types">More on this: Home types</a></p>
+<ul class="steplinks"><li><a class="ext" href="https://professions.dol.wa.gov/s/license-lookup">Check a broker&#x27;s license</a></li></ul>
+</li><li class="step" id="step-5">
+<h3><span class="num" aria-hidden="true">5</span>Make an offer and put down earnest money</h3>
+<dl class="meta"><div><dt>Who</dt><dd>You, your broker and the seller</dd></div><div><dt>Money that moves</dt><dd>Earnest money, held by a neutral party</dd></div><div><dt>How long</dt><dd>A day or two to reach a deal</dd></div></dl>
+<p>Your offer is a contract. When you and the seller have both signed, that is called <strong>mutual acceptance</strong>, and the clocks start.</p>
+<p>The contract is a standard form with blanks, plus add-on pages called <strong>contingencies</strong>. A contingency is a condition that lets you back out if something goes wrong. Common ones cover your loan, the inspection and the title.</p>
+<p><strong>The deadlines for each one are written into your contract.</strong> State law does not set them. Ask your broker to walk you through every blank and every date.</p>
+<p><strong>Earnest money</strong> is a deposit that shows you are serious. No law sets the amount. It goes to a neutral holder and counts toward the price at closing. If you back out for a reason your contract does not allow, you can lose it.</p>
+<p class="deeper"><a href="#contract">More on this: Contract and closing</a></p>
+
+</li><li class="step" id="step-6">
+<h3><span class="num" aria-hidden="true">6</span>Read the disclosure and inspect the house</h3>
+<dl class="meta"><div><dt>Who</dt><dd>The seller, and a home inspector you hire</dd></div><div><dt>Money that moves</dt><dd>The inspection fee, paid by you</dd></div><div><dt>How long</dt><dd>2 to 3 hours on site, plus time for the report</dd></div></dl>
+<p>Two things happen fast after mutual acceptance.</p>
+<p><strong>The seller's disclosure form.</strong> The seller must give you a filled-in form about the home's condition within five business days, unless you both agree to a different date. You then have <strong>three business days</strong> to accept it or cancel in writing and get your deposit back. If you say nothing, that counts as accepting it. The form is not a warranty.</p>
+<p><strong>Your inspection.</strong> Washington licenses home inspectors. An inspection is a visual check of what the inspector can safely reach. It does <strong>not</strong> cover the sewer line, a septic system, a well, radon or mold unless you add those. Only an inspector with a second state license can name a wood-eating insect.</p>
+<p>An appraisal is not an inspection. The appraiser works out value for the lender. The inspector checks condition for you.</p>
+<p>If your contract has an inspection contingency, you have three choices inside its deadline. You can ask the seller to fix things or give a credit. You can accept the house as it is. Or you can cancel.</p>
+<p class="deeper"><a href="#inspection">More on this: Inspections</a></p>
+<ul class="steplinks"><li><a class="ext" href="https://professions.dol.wa.gov/s/license-lookup">Check an inspector&#x27;s license</a></li></ul>
+</li><li class="step" id="step-7">
+<h3><span class="num" aria-hidden="true">7</span>Finish the loan: appraisal, title and insurance</h3>
+<dl class="meta"><div><dt>Who</dt><dd>Your lender, an appraiser, a title company and an insurance agent</dd></div><div><dt>Money that moves</dt><dd>The appraisal fee, then your first insurance premium</dd></div><div><dt>How long</dt><dd>Most of the 30 to 60 days before closing</dd></div></dl>
+<p>Tell one lender to go ahead, and lock your rate. Rate locks usually last 30, 45 or 60 days.</p>
+<p>The lender orders an <strong>appraisal</strong>. You have a right to a free copy no later than three days before closing.</p>
+<p><strong>Underwriting</strong> is the lender checking your file and the home. Do not take on new debt during this stretch. The federal consumer agency warns that even financing a refrigerator can make the loan harder to get.</p>
+<p>The <strong>title company</strong> searches the home's ownership records and sends a preliminary commitment. Read its list of exceptions, because those are the things the policy will not cover. The lender's title policy protects only the lender. The owner's policy protects you and is optional. Washington's insurance regulator says most sellers pay for the owner's policy, and that you have the final say on which title company is used.</p>
+<p>Your lender will also require <strong>homeowners insurance</strong> before closing. Get more than one quote. A standard policy does not cover floods or earthquakes.</p>
+<p class="deeper"><a href="#first-year">More on this: Insurance and your first year</a></p>
+
+</li><li class="step" id="step-8">
+<h3><span class="num" aria-hidden="true">8</span>Close and get your keys</h3>
+<dl class="meta"><div><dt>Who</dt><dd>An escrow agent or closing officer</dd></div><div><dt>Money that moves</dt><dd>Your down payment and closing costs</dd></div><div><dt>How long</dt><dd>Signing, then recording, usually within days</dd></div></dl>
+<p>You must get a <strong>Closing Disclosure</strong> at least three business days before you sign. It shows the final numbers. Lay it next to your Loan Estimate and ask about anything that changed.</p>
+<p><strong>Watch for wire fraud.</strong> Criminals send fake emails with "new wiring instructions" just before closing. Before you send money, call your closer at a phone number you already know. Never use a number, link or attachment from the email.</p>
+<p>Do a final walk-through of the house before you sign. Check that agreed repairs were made and that promised items are still there.</p>
+<p>In Washington an escrow agent or a title company usually runs the closing. No source we found requires a lawyer, and you may hire one if you want one.</p>
+<p>Signing day is usually not the day you own the home. After you sign, the lender sends the money and the deed is recorded at the county. Then the sale is closed. Your contract sets the day you get the keys.</p>
+<p class="deeper"><a href="#first-year">More on this: Your first year</a></p>
+<ul class="steplinks"><li><a class="ext" href="https://files.consumerfinance.gov/f/documents/cfpb_buying-a-house_mortgage-closing_checklist.pdf">Closing checklist from the federal consumer agency</a></li><li><a class="ext" href="https://www.consumerfinance.gov/owning-a-home/beware-mortgage-closing-scams/">How closing scams work</a></li></ul>
+</li></ol>
+<p>That is the whole path. The sections in the menu go deeper on each part, and the checklist puts every step on one page you can tick off.</p>
+<p><a href="#checklist">Open the checklist</a></p>
+</section><section class="view" id="money" aria-labelledby="money-h"><h1 id="money-h">Money and costs</h1><p>Buying a home takes three piles of cash and a credit record a lender will accept. This page sizes each one.</p>
+<h2>Your credit</h2>
+<p>Pull your reports first. They are free every week at <a class="ext" href="https://www.annualcreditreport.com">AnnualCreditReport.com</a>. If you find a mistake, <a class="ext" href="https://consumer.ftc.gov/articles/disputing-errors-your-credit-reports">disputing it is free</a> and the bureau has 30 days to look into it.</p>
+<p>Each loan type treats credit scores differently.</p>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Loan type</th>
+<th>What the official rules say about scores</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FHA</td>
+<td>580 or higher gets the smallest down payment. 500 to 579 needs 10% down. Under 500 is not eligible.</td>
+</tr>
+<tr>
+<td>VA</td>
+<td>No published minimum. You must meet VA's and the lender's standards.</td>
+</tr>
+<tr>
+<td>USDA Guaranteed</td>
+<td>The program page says there is no score requirement, but you must show you handle debt well.</td>
+</tr>
+<tr>
+<td>Conventional</td>
+<td>Fannie Mae asks for 620 on fixed-rate loans that a person underwrites by hand. Loans run through its automated system have no set minimum.</td>
+</tr>
+</tbody>
+</table></div>
+<p>A lender may set a higher bar than the program does. A program minimum is not a promise of approval.</p>
+<h2>Debt-to-income</h2>
+<p>Add up your monthly debt payments, with the new house payment included. Divide by your monthly income before taxes. The federal consumer agency's example: $2,000 of payments on $6,000 of income is 33%.</p>
+<p>There is no single legal limit. Each program publishes its own ceiling. For total debt, the published ceilings run from 36% to 50%.</p>
+<h2>The down payment</h2>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Loan type</th>
+<th>Smallest down payment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>VA</td>
+<td>None, if you qualify and the price is not above the appraised value</td>
+</tr>
+<tr>
+<td>USDA</td>
+<td>None, if you and the address qualify</td>
+</tr>
+<tr>
+<td>Conventional</td>
+<td>3% on some programs</td>
+</tr>
+<tr>
+<td>FHA</td>
+<td>3.5%</td>
+</tr>
+</tbody>
+</table></div>
+<p>On a $400,000 home, 3% is $12,000 and 3.5% is $14,000.</p>
+<p>Gifts are allowed. On a conventional loan, a gift from a relative can cover the whole down payment. The giver signs a gift letter and cannot be someone with a stake in the sale, such as the builder or an agent.</p>
+<h2>Mortgage insurance and fees</h2>
+<p>A small down payment comes with an extra charge. The numbers below were current in November 2026 and change over time.</p>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Loan type</th>
+<th>The charge</th>
+<th>When it ends</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Conventional</td>
+<td>Private mortgage insurance (PMI) when you put down less than 20%</td>
+<td>You can ask to drop it at 80% of the home's original value. It must end at 78%.</td>
+</tr>
+<tr>
+<td>FHA</td>
+<td>1.75% up front, plus a yearly premium</td>
+<td>With less than 10% down, the yearly premium lasts for the whole loan. With 10% or more down, 11 years.</td>
+</tr>
+<tr>
+<td>VA</td>
+<td>A one-time funding fee. No monthly insurance. Some veterans are exempt.</td>
+<td>One time. It can be added to the loan.</td>
+</tr>
+<tr>
+<td>USDA Guaranteed</td>
+<td>An up-front fee plus a small yearly fee</td>
+<td>Check with your lender</td>
+</tr>
+</tbody>
+</table></div>
+<h2>Closing costs</h2>
+<p>The federal consumer agency's rule of thumb is <strong>2% to 5% of the price</strong>, not counting the down payment. On a $400,000 home that is about $8,000 to $20,000. No Washington agency publishes a state figure.</p>
+<p>Closing costs include lender charges, the appraisal, title insurance, government recording fees, and prepaid items. Prepaid items are things like interest to the end of the month, the first year of homeowners insurance, and starter deposits for taxes and insurance.</p>
+<p>A simple way to budget: <strong>cash to close = down payment + closing costs − earnest money already paid − any credits.</strong></p>
+<h2>Who pays what in Washington</h2>
+<p>Most of this is custom, and everything in a contract can be bargained.</p>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Cost</th>
+<th>Who usually pays</th>
+<th>How firm is that?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Real estate excise tax</td>
+<td>The seller</td>
+<td><a class="ext" href="https://app.leg.wa.gov/RCW/default.aspx?cite=82.45.080">State law</a>. If the seller does not pay, the state can look to the buyer.</td>
+</tr>
+<tr>
+<td>Owner's title policy</td>
+<td>Most sellers</td>
+<td>The state insurance regulator says "generally"</td>
+</tr>
+<tr>
+<td>Lender's title policy</td>
+<td>The buyer, if the lender requires it</td>
+<td>Same source</td>
+</tr>
+<tr>
+<td>Escrow fee</td>
+<td>Often split</td>
+<td>Custom only. No law assigns it.</td>
+</tr>
+<tr>
+<td>Recording fees</td>
+<td>Often the buyer</td>
+<td>Custom only</td>
+</tr>
+<tr>
+<td>Your broker's pay</td>
+<td>Whatever your written agreement says</td>
+<td>State law</td>
+</tr>
+</tbody>
+</table></div>
+<h2>Earnest money</h2>
+<p>No law sets the amount. It is held by a neutral party and counts toward the price at closing.</p>
+<p>One rule is often misquoted. If your contract says that keeping the earnest money is the seller's <strong>only</strong> remedy when a buyer backs out, that clause can be enforced only up to 5% of the price. <a class="ext" href="https://app.leg.wa.gov/RCW/default.aspx?cite=64.04.005">The law</a> does not cap earnest money itself.</p>
+<h2>Loan limits</h2>
+<p>Each year the government sets the largest loan that counts as a standard "conforming" loan, and the largest FHA loan for each county. The numbers change every January. Look up the current ones here:</p>
+<ul>
+<li><a class="ext" href="https://www.fhfa.gov/data/conforming-loan-limit-cll-values">Conforming loan limits</a></li>
+<li><a class="ext" href="https://entp.hud.gov/idapp/html/hicostlook.cfm">FHA limits by county</a></li>
+</ul>
+<h2>Your monthly payment</h2>
+<p>The payment has four parts: principal, interest, mortgage insurance if you have it, and an escrow amount for property tax and homeowners insurance. HOA or condo dues are usually paid on their own.</p>
+<p>Taxes and insurance change every year. So your payment can change even on a fixed-rate loan. Do not budget to the last dollar of the first year's payment.</p>
+<h2>Official links</h2>
+<ul>
+<li><a class="ext" href="https://www.consumerfinance.gov/owning-a-home/process/prepare/determine-your-down-payment/">Work out your down payment</a> (federal consumer agency)</li>
+<li><a class="ext" href="https://www.annualcreditreport.com">Free credit reports</a></li>
+<li><a class="ext" href="https://dor.wa.gov/taxes-rates/other-taxes/real-estate-excise-tax">Washington real estate excise tax</a> (Department of Revenue)</li>
+<li><a class="ext" href="https://www.insurance.wa.gov/insurance-resources/home-insurance/how-home-insurance-works/title-insurance">Title insurance in Washington</a> (Insurance Commissioner)</li>
+</ul><p class="back"><a href="#home">Back to the eight steps</a></p></section><section class="view" id="loans" aria-labelledby="loans-h"><h1 id="loans-h">Loan types</h1><p>There are four families of home loan. You apply for all of them the same way, through a lender.</p>
+<h2>The one idea to remember</h2>
+<p><strong>FHA insures. VA guarantees. USDA guarantees. A lender makes the loan.</strong></p>
+<p>The government stands behind these loans so lenders can offer easier terms. It does not usually lend the money. There are two exceptions: the USDA Direct loan, which you apply for at a USDA Rural Development office, and one VA loan for Native American veterans.</p>
+<h2>The four families</h2>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th></th>
+<th>Conventional</th>
+<th>FHA</th>
+<th>VA</th>
+<th>USDA Guaranteed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Who it is for</td>
+<td>Anyone who qualifies</td>
+<td>Anyone who qualifies. Nothing in FHA's rules limits it to first-time buyers.</td>
+<td>Veterans, service members, some Guard and Reserve members, some surviving spouses</td>
+<td>Buyers with moderate incomes in areas USDA maps as rural</td>
+</tr>
+<tr>
+<td>Smallest down payment</td>
+<td>3% on some programs</td>
+<td>3.5%</td>
+<td>None</td>
+<td>None</td>
+</tr>
+<tr>
+<td>Extra charge</td>
+<td>PMI under 20% down</td>
+<td>Up-front and yearly premiums</td>
+<td>One-time funding fee</td>
+<td>Up-front and yearly fees</td>
+</tr>
+<tr>
+<td>Special step</td>
+<td>None</td>
+<td>The appraiser checks the home is safe, sound and secure</td>
+<td>A Certificate of Eligibility</td>
+<td>An address check and an income check</td>
+</tr>
+</tbody>
+</table></div>
+<h2>Conventional loans</h2>
+<p>A conventional loan is any loan the government does not insure or guarantee. Four programs allow 3% down. Two have income limits and take repeat buyers. Two have no income limit and need a first-time buyer. Ask a lender which ones it offers.</p>
+<p>Some of these programs require a homebuyer class when every borrower is a first-time buyer.</p>
+<h2>FHA loans</h2>
+<p>FHA loans come from FHA-approved lenders. You need 3.5% down with a credit score of 580 or more, and 10% down with a score of 500 to 579. At least one borrower must move in within 60 days and plan to stay at least a year.</p>
+<h2>VA loans</h2>
+<p>You need a <strong>Certificate of Eligibility</strong>. You can <a class="ext" href="https://www.va.gov/housing-assistance/home-loans/how-to-request-coe/">request it online</a>, or your lender can pull it for you. There is no down payment as long as the price is not above the appraised value, and no monthly mortgage insurance. Most buyers pay a one-time funding fee. Veterans who get VA disability pay are exempt.</p>
+<h2>USDA loans</h2>
+<p>USDA has two programs. The <strong>Guaranteed</strong> loan comes from an approved lender. The <strong>Direct</strong> loan comes from USDA itself, for buyers with low incomes.</p>
+<p>Both need the address to be in an eligible area. The only way to know is to <a class="ext" href="https://eligibility.sc.egov.usda.gov/eligibility/welcomeAction.do">type the address into USDA's map</a>. In November 2026, sample points inside the cities of Kennewick, Richland, Pasco and central West Richland showed as not eligible. Outlying towns such as Benton City, Prosser and Connell showed as eligible. The line does not follow city limits, so check the exact address.</p>
+<h2>Loans for fixer-uppers</h2>
+<p>Some loans roll repair costs into the home loan. Not every lender offers them.</p>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Loan</th>
+<th>The short version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FHA Limited 203(k)</td>
+<td>Up to $75,000 of non-structural work (November 2026 figure)</td>
+</tr>
+<tr>
+<td>FHA Standard 203(k)</td>
+<td>Bigger jobs, including structural work. A HUD-approved consultant is required.</td>
+</tr>
+<tr>
+<td>Conventional renovation loans</td>
+<td>Fannie Mae and Freddie Mac each have one. One loan covers the purchase and the work.</td>
+</tr>
+<tr>
+<td>VA alteration and repair</td>
+<td>The work must bring the home up to VA's standards</td>
+</tr>
+</tbody>
+</table></div>
+<h2>How applying works</h2>
+<p>The steps are the same for every loan type.</p>
+<ol>
+<li><strong>Gather your papers.</strong> Pay stubs for the last 30 days, W-2s and tax returns for two years, your two latest bank statements, proof of where the down payment comes from, and ID.</li>
+<li><strong>Ask for a prequalification or preapproval letter.</strong> Neither is a promised loan.</li>
+<li><strong>Get Loan Estimates.</strong> A lender must send one within three business days once it has your name, income, Social Security number, the property address, the home's estimated value and the loan amount. Compare more than one.</li>
+<li><strong>Pick a lender and lock your rate.</strong> Locks usually last 30, 45 or 60 days.</li>
+<li><strong>Underwriting.</strong> The lender checks your file and the home.</li>
+<li><strong>Closing Disclosure.</strong> You get the final numbers at least three business days before you sign.</li>
+</ol>
+<h2>Rate basics</h2>
+<p>A <strong>fixed rate</strong> never changes. An <strong>adjustable rate</strong> holds for a set time and then moves. A 15-year loan has a higher monthly payment than a 30-year loan but costs less overall. One <strong>point</strong> costs 1% of the loan, paid at closing, to lower your rate.</p>
+<h2>Official links</h2>
+<ul>
+<li><a class="ext" href="https://www.consumerfinance.gov/owning-a-home/loan-options/">Loan options explained</a> (federal consumer agency)</li>
+<li><a class="ext" href="https://www.va.gov/housing-assistance/home-loans/">VA home loans</a></li>
+<li><a class="ext" href="https://www.rd.usda.gov/programs-services/single-family-housing-programs/single-family-housing-guaranteed-loan-program">USDA Guaranteed loans</a></li>
+<li><a class="ext" href="https://www.rd.usda.gov/programs-services/single-family-housing-programs/single-family-housing-direct-home-loans">USDA Direct loans</a></li>
+<li><a class="ext" href="https://www.hud.gov/hud-partners/single-family-203k">FHA 203(k) repair loans</a></li>
+<li><a class="ext" href="https://www.nmlsconsumeraccess.org/">Check a lender or loan officer's license</a></li>
+<li><a class="ext" href="https://www.consumerfinance.gov/owning-a-home/prepare/create-a-loan-application-packet/">What to put in a loan application packet</a></li>
+</ul><p class="back"><a href="#home">Back to the eight steps</a></p></section><section class="view" id="help" aria-labelledby="help-h"><h1 id="help-h">Help and classes</h1><p>Washington offers down payment help, a free class and free housing counselors. This page says what each one is and where to start.</p>
+<h2>The state agency</h2>
+<p>The Washington State Housing Finance Commission runs the state programs. Its site for buyers is called <a class="ext" href="https://heretohome.org/home-buyers/">Here to Home</a>. The Commission does not lend money itself. You reach its programs through a loan officer it has trained.</p>
+<p>Not every loan officer at a listed company is trained, so ask yours directly. <a class="ext" href="https://heretohome.org/find-a-partner/">Find a lending partner</a>.</p>
+<h2>Two home loan programs</h2>
+<p>Both sit on top of an FHA, VA, USDA or conventional loan.</p>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th></th>
+<th>Home Advantage</th>
+<th>House Key Opportunity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>First-time buyers only?</td>
+<td>No</td>
+<td>Yes, with some exceptions</td>
+</tr>
+<tr>
+<td>Income limit</td>
+<td>A single statewide limit</td>
+<td>Lower limits that vary by county and household size</td>
+</tr>
+</tbody>
+</table></div>
+<p>The Commission counts you as a first-time buyer if you have not owned and lived in a home in the past three years. Current income and price limits are on its <a class="ext" href="https://heretohome.org/program-limits/">program limits page</a>.</p>
+<h2>Down payment help is a loan</h2>
+<p>Every state option is a <strong>second loan</strong> with no monthly payments. It comes due when you sell, refinance, move out or pay off the first loan. Interest runs from 0% to 4% depending on the option.</p>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Who it is for</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Home Advantage down payment assistance</td>
+<td>Buyers using Home Advantage. A percent of your first loan at 0% interest.</td>
+</tr>
+<tr>
+<td>Needs-based option</td>
+<td>Home Advantage buyers with lower incomes</td>
+</tr>
+<tr>
+<td>House Key Opportunity assistance</td>
+<td>First-time buyers with lower incomes</td>
+</tr>
+<tr>
+<td>HomeChoice</td>
+<td>Households that include a person with a disability</td>
+</tr>
+<tr>
+<td>Veterans</td>
+<td>Honorably discharged veterans and some family members</td>
+</tr>
+<tr>
+<td>Covenant Homeownership Program</td>
+<td>First-time buyers who meet the program's rules on income, Washington history before April 1968, and groups its study found were hurt by housing discrimination</td>
+</tr>
+</tbody>
+</table></div>
+<p>Amounts, interest rates and income limits change. See the Commission's <a class="ext" href="https://heretohome.org/downpayment-assistance/">down payment assistance page</a> for today's numbers.</p>
+<p>Two notes on the Covenant program as of November 2026. Since April 2026 buyers join a waiting list before they can go under contract. And in March 2026 the federal housing department opened an investigation of the program. The program's pages still showed it running. Check its <a class="ext" href="https://heretohome.org/covenant/">current page</a> before you plan around it.</p>
+<h2>The homebuyer class</h2>
+<ul>
+<li><strong>Cost:</strong> free when the Commission sponsors it. A self-study version costs $50.</li>
+<li><strong>Length:</strong> about five hours. Some classes are split over two days.</li>
+<li><strong>Where:</strong> in person or by live video, almost every day.</li>
+<li><strong>Who needs it:</strong> every person who signs the loan, if you use a Commission program.</li>
+<li><strong>How long it counts:</strong> two years.</li>
+</ul>
+<p>The Commission says to take it any time, and that earlier is better. <a class="ext" href="https://heretohome.org/homebuyer-education-classes-list/">See the class list</a>.</p>
+<h2>Housing counselors</h2>
+<p>HUD-approved housing counselors give one-on-one help with buying, credit and budgeting. It is free or low cost.</p>
+<ul>
+<li><strong>Washington Homeownership Hotline: 1-877-894-4663.</strong> Free, run by a nonprofit, with phone interpreters.</li>
+<li><a class="ext" href="https://www.consumerfinance.gov/find-a-housing-counselor/">Search for a counselor by ZIP code</a></li>
+<li>HUD's counseling line: 800-569-4287</li>
+</ul>
+<h2>Other help</h2>
+<ul>
+<li>Buyers of Habitat for Humanity or community land trust homes may get special rates through House Key Opportunity.</li>
+<li>Members of federally recognized tribes can ask a lender about HUD's <a class="ext" href="https://www.hud.gov/section184">Section 184 loan</a>.</li>
+<li>Tri-Cities buyers: see the <a href="#tri-cities">Tri-Cities page</a> for the local down payment program.</li>
+</ul>
+<h2>Official links</h2>
+<ul>
+<li><a class="ext" href="https://heretohome.org/home-buyers/">Here to Home</a> (Housing Finance Commission)</li>
+<li><a class="ext" href="https://heretohome.org/homebuyer-education-classes-list/">Homebuyer class list</a></li>
+<li><a class="ext" href="https://heretohome.org/downpayment-assistance/">Down payment assistance</a></li>
+<li><a class="ext" href="https://www.homeownership-wa.org/">Washington Homeownership Resource Center</a></li>
+<li><a class="ext" href="https://www.consumerfinance.gov/find-a-housing-counselor/">Find a housing counselor</a></li>
+</ul><p class="back"><a href="#home">Back to the eight steps</a></p></section><section class="view" id="home-types" aria-labelledby="home-types-h"><h1 id="home-types-h">Home types: what changes</h1><p>The steps are the same for every home. What changes is the loan check, the paperwork and the risks. If you can get a loan to buy it and move in, it is on this page.</p>
+<h2>What each type adds</h2>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Home type</th>
+<th>What it adds to the basic process</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Existing house</td>
+<td>Nothing. This is the baseline.</td>
+</tr>
+<tr>
+<td>Condo</td>
+<td>A lender check of the whole building, a packet of HOA papers with a short right to cancel, and insurance split between you and the HOA</td>
+</tr>
+<tr>
+<td>Townhouse</td>
+<td>The same as a condo if its legal papers make it one. If not, a simpler loan but sometimes fewer papers to review.</td>
+</tr>
+<tr>
+<td>New construction</td>
+<td>The builder's own contract, a shorter disclosure form, and a builder-linked lender to compare against others</td>
+</tr>
+<tr>
+<td>Manufactured home on land you will own</td>
+<td>Whether the home legally counts as real estate, state permits for changes, and a foundation check</td>
+</tr>
+<tr>
+<td>Manufactured home on a rented lot</td>
+<td>A different kind of loan, plus a lot lease with its own state law</td>
+</tr>
+<tr>
+<td>Duplex, triplex or fourplex you will live in</td>
+<td>Bigger down payments on some loans, and landlord duties from day one</td>
+</tr>
+<tr>
+<td>Fixer-upper with a repair loan</td>
+<td>A contractor and a written work plan before closing, then inspected payouts after</td>
+</tr>
+</tbody>
+</table></div>
+<h2>Condo</h2>
+<p><strong>The loan.</strong> The lender checks the whole condo project, not just you and the unit. FHA needs the project to be approved, or the unit to pass FHA's own single-unit review. VA needs the condo to be VA-approved. For a conventional loan the lender decides whether the project qualifies. Ask about this early, because a "no" can stop the deal.</p>
+<p><strong>The papers and your right to cancel.</strong> The seller gets a <strong>resale certificate</strong> from the HOA and gives it to you. It covers dues, special charges coming up, the reserve study, lawsuits, insurance, the rules and recent meeting minutes. For condos created on or after July 1, 2018, you have five business days after first getting it to cancel. Older condos follow a slightly different rule until 2028. Ask before you offer: was this condo created before or after July 1, 2018?</p>
+<p><strong>Insurance.</strong> The HOA holds a master policy on the building. You buy your own policy, called HO-6, for the inside of your unit, your belongings and liability. How much the master policy covers varies, so read that part of the resale certificate.</p>
+<p><strong>Inspection.</strong> A home inspector does not have to inspect the shared parts of the building. The HOA papers are your window into those.</p>
+<h2>Townhouse</h2>
+<p>"Townhouse" is a building style, not a kind of ownership. Some are legally condos. Others sit on their own lot inside an HOA. The legal description and the recorded declaration tell you which, and the title company can help you read them.</p>
+<p>If it is a condo, everything in the condo section applies. If it is not, and the HOA was created before July 1, 2018, there is no resale certificate under the older law. You will need to ask for the budget, reserve study and minutes yourself.</p>
+<h2>New construction</h2>
+<ul>
+<li><strong>Disclosure is shorter.</strong> For a home no one has lived in, the seller can skip the structure and systems questions on the state form.</li>
+<li><strong>Warranty.</strong> Washington courts recognize a basic warranty from a builder to the first buyer. It covers serious structural or safety problems, not ordinary workmanship flaws. The builder's own written warranty is a contract term, so read it.</li>
+<li><strong>Get your own inspection.</strong> Official advice to inspect is not limited to older homes.</li>
+<li><strong>The builder's lender.</strong> A builder may send you to a lender it owns or profits from. It must tell you so in writing and cannot require you to use it. Compare that lender's Loan Estimate with others.</li>
+<li><strong>Check the builder</strong> on the state's <a class="ext" href="https://secure.lni.wa.gov/verify/">contractor lookup</a>.</li>
+</ul>
+<h2>Manufactured home on land you will own</h2>
+<p>A manufactured home is built in a factory to the federal HUD Code, on or after June 15, 1976. It carries a red HUD label. A home built before that date is a "mobile home." A "modular" home is built to the state building code and is treated like a site-built house.</p>
+<p><strong>The key question: is it real estate?</strong> A manufactured home has a vehicle-style title unless that title has been "eliminated." Title elimination records the home with the county so it is sold by deed with the land. The main mortgage programs need this, plus a permanent foundation.</p>
+<p><strong>Why it matters.</strong> If the home is not real estate, you may be offered a <strong>chattel loan</strong>, which is secured by the home only. Federal research found those loans had higher rates, shorter terms and fewer protections than mortgages.</p>
+<p><strong>Permits.</strong> The Department of Labor &amp; Industries, not the city, permits changes to the home itself, such as a new furnace, water heater or roof. Its <a class="ext" href="https://secure.lni.wa.gov/epispub/frmPermitSearchMain.aspx">online permit search</a> only goes back a few years, so an empty result does not prove older work was permitted.</p>
+<h2>Manufactured home on a rented lot</h2>
+<p><strong>The loan.</strong> A home in a rental community will usually be limited to a chattel loan or FHA's Title I program.</p>
+<p><strong>The lot lease.</strong> You become a tenant under a special state law.</p>
+<ul>
+<li>The park must offer a written lease of a year or more.</li>
+<li>State law limits how fast lot rent can rise.</li>
+<li><strong>One exception hits buyers.</strong> When a home is sold, the landlord may make a one-time rent increase with no cap at the first renewal. The landlord must tell you about this before the sale is final. Ask.</li>
+<li>The landlord must screen you like any new tenant and cannot refuse without good reason.</li>
+</ul>
+<p>The Attorney General runs a <a class="ext" href="https://www.atg.wa.gov/manufactured-housing-dispute-resolution-program">dispute program</a> for people who own their home and rent the lot.</p>
+<h2>Duplex, triplex or fourplex you will live in</h2>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Loan</th>
+<th>Smallest down payment (November 2026)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FHA</td>
+<td>3.5%. For three or four units, the rent must be enough to carry the payment.</td>
+</tr>
+<tr>
+<td>VA</td>
+<td>None, if the price is not above the appraised value</td>
+</tr>
+<tr>
+<td>Conventional</td>
+<td>5% on standard-size loans approved by automated underwriting</td>
+</tr>
+<tr>
+<td>USDA Guaranteed</td>
+<td>Not available for homes that produce income</td>
+</tr>
+</tbody>
+</table></div>
+<p>You become a landlord the day you close. Washington's landlord-tenant law applies right away. You must keep units fit to live in, give 90 days' written notice of a rent increase, and can end a tenancy only for listed reasons. Tenants who already live there come with the building.</p>
+<h2>Fixer-upper with a repair loan</h2>
+<p>Government-backed loans need a home that is safe and sound at closing. A rough house can fail the appraisal. A repair loan is the way around that.</p>
+<ul>
+<li>You need a contractor and a written work plan <strong>before</strong> closing.</li>
+<li>The loan is based on what the home will be worth after repairs.</li>
+<li>Repair money is held back and paid out in stages as work passes inspection.</li>
+<li>A reserve is set aside for surprises.</li>
+</ul>
+<p>The state's advice on contractors: get three written bids, check registration, pay as stages finish, and never pay in full until the work is done.</p>
+<h2>Official links</h2>
+<ul>
+<li><a class="ext" href="https://secure.lni.wa.gov/verify/">Verify a contractor or builder</a> (Labor &amp; Industries)</li>
+<li><a class="ext" href="https://www.lni.wa.gov/licensing-permits/manufactured-modular-mobile-structures/manufactured-home-permits-inspections/">Manufactured home permits and inspections</a></li>
+<li><a class="ext" href="https://dol.wa.gov/vehicles-and-boats/vehicles/vehicle-registration/vehicle-title/manufactured-home-application">Manufactured home title steps</a> (Department of Licensing)</li>
+<li><a class="ext" href="https://www.atg.wa.gov/manufactured-mobile-home-landlord-tenant-act">Rights of manufactured home lot renters</a> (Attorney General)</li>
+<li><a class="ext" href="https://entp.hud.gov/idapp/html/condlook.cfm">FHA-approved condo lookup</a></li>
+<li><a class="ext" href="https://www.insurance.wa.gov/insurance-resources/condo-insurance/learn-how-condo-insurance-works">How condo insurance works</a> (Insurance Commissioner)</li>
+</ul><p class="back"><a href="#home">Back to the eight steps</a></p></section><section class="view" id="contract" aria-labelledby="contract-h"><h1 id="contract-h">Contract and closing</h1><p>This is the stretch where you sign papers with deadlines you have never seen before. Here is what each one means under Washington law.</p>
+<h2>Your agreement with a broker</h2>
+<p>Since January 1, 2024, a real estate firm must have a written <strong>brokerage services agreement</strong> with a buyer. It must state:</p>
+<ul>
+<li>how long it lasts (60 days unless you agree to longer),</li>
+<li>which broker will work for you,</li>
+<li>whether the deal is exclusive,</li>
+<li>what the firm will be paid, and</li>
+<li>whether the broker will show you homes where no one else has offered to pay the firm.</li>
+</ul>
+<p>Pay can come from you, the seller, a third party, or be shared between firms. Before you sign, the broker must give you a state pamphlet called "Real Estate Brokerage in Washington."</p>
+<p>Every broker owes every party honesty and reasonable care. Your own broker also owes you loyalty and must tell you about conflicts. A broker can work for both sides only if both agree in writing.</p>
+<h2>The seller's disclosure form</h2>
+<p>Most people call it <strong>Form 17</strong>. It asks the seller about title, water, sewer or septic, structure, systems, HOAs and the environment.</p>
+<ul>
+<li>The seller must deliver it within <strong>five business days</strong> after mutual acceptance, unless you both agree otherwise.</li>
+<li>You then have <strong>three business days</strong> to accept it or cancel in writing.</li>
+<li>If you cancel, you get your deposits back.</li>
+<li>If you say nothing, that counts as accepting.</li>
+</ul>
+<p>Know its limits. It is not a warranty. The seller is not liable for a mistake the seller did not know about. The form itself tells you to hire your own experts. And you should think hard before waiving it, because cancelling is the only remedy this law gives you.</p>
+<p>A new version of the form takes effect January 1, 2027.</p>
+<h2>The contract and its contingencies</h2>
+<p>Most brokers use standard printed forms with blanks. Add-on pages set the conditions, called contingencies:</p>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Contingency</th>
+<th>What it is about</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Financing</td>
+<td>Getting your loan</td>
+</tr>
+<tr>
+<td>Inspection</td>
+<td>The condition of the house</td>
+</tr>
+<tr>
+<td>Title</td>
+<td>Problems in the ownership records</td>
+</tr>
+<tr>
+<td>Appraisal</td>
+<td>The home appraising for less than the price</td>
+</tr>
+<tr>
+<td>Sale of your current home</td>
+<td>Only if you need to sell first</td>
+</tr>
+<tr>
+<td>HOA papers</td>
+<td>Reviewing the resale certificate</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>How many days you get for each one is set in your contract.</strong> We could not find those day counts in any official source, and the forms are revised often. Do not trust a number you saw somewhere else. Ask your broker to show you each deadline on your own contract.</p>
+<p>Two rights exist no matter what the form says:</p>
+<ol>
+<li>The three-business-day right to cancel after the seller's disclosure.</li>
+<li>For homes built before 1978, a 10-day chance to test for lead paint. You and the seller can change or waive it in writing.</li>
+</ol>
+<h2>Earnest money</h2>
+<p>A real estate firm that takes your earnest money must put it in a trust account by the next banking day, unless the contract says to hold the check. If you and the seller fight over it, state law sets a step-by-step process, and it can end up in court. Agreeing in writing is the cheap path.</p>
+<h2>Title</h2>
+<p>The title company sends a <strong>preliminary commitment</strong>. By law it is an offer to insure, with a list of exceptions. It is not a statement that the title is clean. The exceptions are the part to read. The seller cannot make you use a particular title company.</p>
+<h2>Signing and who must sign</h2>
+<p>Washington law provides for a loan paper called a <strong>deed of trust</strong>. It pledges the home to a neutral trustee, who can sell it if the loan is not repaid. The seller gives you a <strong>statutory warranty deed</strong>, which carries the seller's promise that they own the home and that it is free of claims.</p>
+<p>Washington is a community property state. If you are married or in a registered domestic partnership, expect both of you to sign.</p>
+<p>At signing, the federal consumer agency says: take your time, never sign a blank paper, and stop the closing if the answers do not add up.</p>
+<h2>The three-day rule before closing</h2>
+<p>You must get the <strong>Closing Disclosure</strong> at least three business days before closing. A new three-day wait starts only if the yearly cost rate (APR) changes by too much, the loan product changes, or a prepayment penalty is added. If the form has not come, ask your lender right away.</p>
+<h2>Fair housing</h2>
+<p>Federal law bars housing discrimination based on race, color, national origin, religion, sex, family status and disability. Washington law adds more, including marital status, sexual orientation, citizenship or immigration status, and military or veteran status. You have one year to file a complaint.</p>
+<ul>
+<li><a class="ext" href="https://www.hud.gov/reporthousingdiscrimination">Report to HUD</a>, or call 1-800-669-9777</li>
+<li><a class="ext" href="https://www.hum.wa.gov/node/29">Washington State Human Rights Commission</a>, 800-233-3247</li>
+</ul>
+<h2>Wire fraud</h2>
+<p>This is the best-documented danger in a home purchase. Criminals break into email, watch for a closing, and send fake "new wiring instructions," often at the last minute.</p>
+<p><strong>To prevent it:</strong> early on, agree with your closer by phone or in person how money will be sent. Before you wire anything, call a number you already know. Never use a phone number, link or attachment from the email.</p>
+<p><strong>If money has already gone to a criminal, move fast:</strong></p>
+<ol>
+<li>Call your bank or wire service and ask for a wire recall.</li>
+<li>File a complaint at <a class="ext" href="https://www.ic3.gov">ic3.gov</a> with the banking details.</li>
+<li><a class="ext" href="https://reportfraud.ftc.gov">Report it to the Federal Trade Commission</a>.</li>
+</ol>
+<h2>Other things that sink deals</h2>
+<ul>
+<li><strong>New debt before closing.</strong> Even a small new loan can change or stop your mortgage.</li>
+<li><strong>Skipping the final walk-through.</strong> Go before you sign. Check the repairs and the items the seller promised to leave.</li>
+<li><strong>Waiving protections to win a bid.</strong> The state form, HUD and the federal consumer agency all tell buyers to get an inspection before they are committed.</li>
+</ul>
+<h2>Official links</h2>
+<ul>
+<li><a class="ext" href="https://app.leg.wa.gov/RCW/default.aspx?cite=64.06.030">Seller disclosure law</a></li>
+<li><a class="ext" href="https://app.leg.wa.gov/RCW/default.aspx?cite=18.86.020">Broker duties and agreements</a></li>
+<li><a class="ext" href="https://www.consumerfinance.gov/owning-a-home/closing-disclosure/">Your Closing Disclosure, explained</a></li>
+<li><a class="ext" href="https://dfi.wa.gov/consumers/verify-license">Check an escrow agent's license</a> (Department of Financial Institutions)</li>
+<li><a class="ext" href="https://www.insurance.wa.gov/agent-and-company-lookup-tool">Look up a title company</a> (Insurance Commissioner)</li>
+<li><a class="ext" href="https://www.consumerfinance.gov/about-us/blog/mortgage-closing-scams-how-protect-yourself-and-your-closing-funds/">How closing scams work</a></li>
+<li><a class="ext" href="https://www.epa.gov/lead/real-estate-disclosures-about-potential-lead-hazards">Lead paint disclosure rules</a> (EPA)</li>
+</ul><p class="back"><a href="#home">Back to the eight steps</a></p></section><section class="view" id="inspection" aria-labelledby="inspection-h"><h1 id="inspection-h">Home inspections</h1><p>The inspection is your one close look at the house before you are committed. This page covers who does it, what it includes, what it leaves out and how to use the report.</p>
+<h2>Who does it</h2>
+<p>Anyone who inspects a home's condition for a fee in Washington needs a <strong>home inspector license</strong> from the Department of Licensing. To get one, a person takes a 120-hour course, does 40 hours of field training with at least five real inspections, and passes a two-part exam. The license is renewed every two years with more training.</p>
+<p>Washington does <strong>not</strong> require inspectors to carry insurance or a bond. It is fair to ask.</p>
+<p><a class="ext" href="https://professions.dol.wa.gov/s/license-lookup">Check an inspector's license</a> before you hire.</p>
+<h2>Why get one</h2>
+<ul>
+<li>The seller's disclosure form is not a warranty. The form itself tells you to hire your own experts.</li>
+<li>An appraisal is not an inspection. The appraiser estimates value for the lender. FHA's own notice to buyers says it does not inspect the home or guarantee its condition.</li>
+<li>With an inspection contingency in your contract, the report gives you room to ask for repairs or to walk away.</li>
+</ul>
+<h2>What a standard inspection covers</h2>
+<p>It is a visual look at the parts of the home that can be safely reached, on that day. It is not exhaustive and will not find hidden defects.</p>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Must be inspected</th>
+<th>Not required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Structure: foundation, framing, crawlspace and attic where safe to reach</td>
+<td>Whether the home meets building code</td>
+</tr>
+<tr>
+<td>Exterior</td>
+<td>How long anything will last, or what a repair will cost</td>
+</tr>
+<tr>
+<td>Roof</td>
+<td>Mold, asbestos, lead paint, and water, soil or air quality, unless agreed in writing</td>
+</tr>
+<tr>
+<td>Plumbing, including water heater safety parts</td>
+<td>Wells and septic systems</td>
+</tr>
+<tr>
+<td>Electrical, including panels that can be opened</td>
+<td>Buried items such as tanks and sprinkler lines</td>
+</tr>
+<tr>
+<td>Heating, air conditioning and heat pumps</td>
+<td>Detached buildings, pools and hot tubs</td>
+</tr>
+<tr>
+<td>Interior, including missing smoke or carbon monoxide alarms</td>
+<td>Shared parts of a condo</td>
+</tr>
+<tr>
+<td>Insulation and ventilation</td>
+<td>The inside of chimney flues</td>
+</tr>
+<tr>
+<td>Fireplaces and stoves</td>
+<td>Moving furniture or stored items</td>
+</tr>
+<tr>
+<td>The ground right next to the house</td>
+<td>Fences</td>
+</tr>
+<tr>
+<td>Attached garages and carports</td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<p>So a standard inspection will not tell you "is it up to code," "how many years are left on the roof," or "what will this cost to fix."</p>
+<h2>Before the inspection</h2>
+<p>The inspector must give you a written <strong>pre-inspection agreement</strong>. It states the address, the fee, the inspector's license number, and what will and will not be inspected. Before you sign, the inspector must tell you in writing about any business, family or money ties to anyone in the sale.</p>
+<p>The rules set no deadline for the report. Timing follows your agreement. If your contract's inspection window is short, confirm the delivery time before you sign.</p>
+<h2>Rules that protect you</h2>
+<ul>
+<li>For one year after the inspection, the inspector and their firm may not be paid to repair what they inspected.</li>
+<li>Inspectors may not pay anyone for referrals.</li>
+<li>Inspectors may not shade a report to win future business.</li>
+<li>Inspectors may not share your report without your approval.</li>
+<li>Your broker's firm must protect your right to pick any inspector. If a broker has a business or family tie to an inspector they suggest, they must tell you in writing.</li>
+</ul>
+<h2>Rot, pests and the second license</h2>
+<p>A home inspector must report wood rot and conditions that invite pests. But only someone who also holds a <strong>structural pest inspector</strong> license from the Department of Agriculture may name the insect. If you want a full pest report, ask whether your inspector holds both licenses.</p>
+<h2>Checks a standard inspection does not include</h2>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Check</th>
+<th>Why you might want it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sewer line camera</td>
+<td>The buried line to the street is outside a standard inspection</td>
+</tr>
+<tr>
+<td>Septic system</td>
+<td>Starting February 1, 2027, state rules require a septic inspection when a property changes hands. Before that date you can still ask for one.</td>
+</tr>
+<tr>
+<td>Well water</td>
+<td>Testing is the owner's job. The state advises yearly tests for bacteria and nitrate.</td>
+</tr>
+<tr>
+<td>Radon</td>
+<td>A gas you cannot see or smell. Testing is the only way to know. EPA says to test every home.</td>
+</tr>
+<tr>
+<td>Buried heating oil tank</td>
+<td>The inspector reports signs of one but does not have to confirm it</td>
+</tr>
+<tr>
+<td>Lead paint</td>
+<td>For homes built before 1978</td>
+</tr>
+<tr>
+<td>Asbestos</td>
+<td>It usually cannot be spotted by eye</td>
+</tr>
+<tr>
+<td>Pests</td>
+<td>See above</td>
+</tr>
+<tr>
+<td>Flood zone</td>
+<td>Look up the address on <a class="ext" href="https://msc.fema.gov/portal/home">FEMA's flood maps</a></td>
+</tr>
+<tr>
+<td>Structural engineer</td>
+<td>VA's buyer guide notes one may be worth hiring for an older home</td>
+</tr>
+</tbody>
+</table></div>
+<h2>How to choose an inspector</h2>
+<ul>
+<li>Check the license.</li>
+<li>Pick someone who answers to you. The federal consumer agency warns that an inspector paid by someone else may play down problems.</li>
+<li>Ask for references.</li>
+<li>Ask about insurance, a pest license, and when the report will arrive.</li>
+<li>Plan to be there. HUD says an inspector who will not let you attend is a red flag.</li>
+</ul>
+<p>This site does not recommend any inspector.</p>
+<h2>Using the report</h2>
+<p>With an inspection contingency, you have three choices: ask the seller to repair, pay or give a credit; accept the home and plan the repairs yourself; or cancel. What the seller agrees to depends on your contract and the market. For big repairs, a lender may require the work before closing.</p>
+<h2>If something goes wrong</h2>
+<p>You can <a class="ext" href="https://dol.wa.gov/professional-licenses/file-complaint">file a complaint</a> with the Department of Licensing. It can fine an inspector or pull a license. It cannot get your money back.</p>
+<h2>Official links</h2>
+<ul>
+<li><a class="ext" href="https://professions.dol.wa.gov/s/license-lookup">Look up an inspector's license</a></li>
+<li><a class="ext" href="https://app.leg.wa.gov/WAC/default.aspx?cite=308-408C&amp;full=true">Home inspector rules: what must be inspected</a></li>
+<li><a class="ext" href="https://dol.wa.gov/professional-licenses/home-inspectors/frequently-asked-questions-home-inspectors">Home inspector questions and answers</a> (Department of Licensing)</li>
+<li><a class="ext" href="https://www.consumerfinance.gov/owning-a-home/close/schedule-a-home-inspection/">Scheduling a home inspection</a> (federal consumer agency)</li>
+<li><a class="ext" href="https://hud.gov/program_offices/housing/sfh/insp/inspfaq">Ten questions to ask an inspector</a> (HUD)</li>
+<li><a class="ext" href="https://doh.wa.gov/community-and-environment/contaminants/radon">Radon in Washington</a> (Department of Health)</li>
+<li><a class="ext" href="https://doh.wa.gov/community-and-environment/wastewater-management/septic-system">Septic systems</a> (Department of Health)</li>
+<li><a class="ext" href="https://plia.wa.gov/heating-oil-tank-leaks/">Heating oil tanks</a></li>
+</ul><p class="back"><a href="#home">Back to the eight steps</a></p></section><section class="view" id="first-year" aria-labelledby="first-year-h"><h1 id="first-year-h">Insurance and your first year</h1><p>The purchase is the part everyone prepares for. The first year is where new owners get surprised. This page is a list of things to know, starting with insurance, because your lender will require a policy before you close.</p>
+<h2>Homeowners insurance in plain terms</h2>
+<p>A standard policy has six parts.</p>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Part</th>
+<th>What it pays for</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Dwelling</td>
+<td>Repairing or rebuilding the house</td>
+</tr>
+<tr>
+<td>Other structures</td>
+<td>A detached garage, shed or workshop</td>
+</tr>
+<tr>
+<td>Personal property</td>
+<td>Your belongings</td>
+</tr>
+<tr>
+<td>Loss of use</td>
+<td>Extra living costs while the home cannot be lived in</td>
+</tr>
+<tr>
+<td>Liability</td>
+<td>Injury or damage you are legally responsible for</td>
+</tr>
+<tr>
+<td>Medical payments</td>
+<td>Small medical bills for guests</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>What it leaves out</strong></p>
+<ul>
+<li><strong>Flood.</strong> Not covered. It takes a separate policy. A federal flood policy usually starts 30 days after you buy it, with no wait if you buy it along with your mortgage.</li>
+<li><strong>Earthquake.</strong> Not covered. It is an add-on or a separate policy with a large deductible.</li>
+<li><strong>Landslide.</strong> Usually not covered.</li>
+<li><strong>Sewer backup.</strong> An add-on you have to ask for.</li>
+</ul>
+<p><strong>Wildfire.</strong> Fire, including wildfire, is part of a standard policy. In high-risk areas an insurer may charge more, set a higher wildfire deductible, or decline to renew.</p>
+<p><strong>Words worth knowing</strong></p>
+<ul>
+<li><strong>Replacement cost</strong> pays to replace an item new. <strong>Actual cash value</strong> pays what the used item was worth. Ask which one a quote is offering.</li>
+<li><strong>Deductible</strong> is the part of a claim you pay first.</li>
+</ul>
+<p><strong>If you let the policy lapse,</strong> your lender can buy one for you. That policy protects the lender, usually costs much more, and is billed to you.</p>
+<p><strong>How the price is set.</strong> Insurers look at location, how the home is built, how much coverage you want and past claims. Insurers in Washington may also use your credit history to set the price, though credit alone cannot be used to deny or cancel a policy.</p>
+<p><strong>Shopping tips from the state insurance regulator:</strong> confirm the company is licensed, compare complaint records, get several quotes, and expect the final price to differ a little from the first quote.</p>
+<p><strong>Condo owners</strong> buy an HO-6 policy that works with the HOA's master policy.</p>
+<p><strong>A home warranty is not insurance.</strong> It is a service contract for appliance and system repairs. Check the service-call fee, the payout caps and what it leaves out.</p>
+<h2>Things to know in your first year</h2>
+<h3>Property tax</h3>
+<ul>
+<li>The county assessor sets your home's value. The county treasurer sends the bill.</li>
+<li>Half is due <strong>April 30</strong> and the rest <strong>October 31</strong>.</li>
+<li>You are the legal taxpayer even if your lender pays from escrow. In some counties a new owner may not get a mailed bill the first year, so look up your parcel online.</li>
+<li>For a home with four or fewer units, state law sets late interest at 9% a year with no added penalties. Some agency pages still show older wording.</li>
+<li>Tax breaks are targeted to seniors, people with disabilities, some veterans and limited-income owners. There is no general break for every homeowner.</li>
+</ul>
+<h3>Your escrow account</h3>
+<ul>
+<li>Your loan servicer reviews the account once a year.</li>
+<li>Your payment can change after that review, because real tax and insurance bills replace the estimates made at closing.</li>
+<li>A shortage can be spread over at least 12 months.</li>
+</ul>
+<h3>Your loan</h3>
+<ul>
+<li>Your loan may be sold to a new servicer. You must get written notice. For 60 days, a payment sent to the old servicer on time cannot be treated as late.</li>
+<li>On a conventional loan you can ask to drop PMI when the balance reaches 80% of the home's original value.</li>
+<li>On an FHA loan with less than 10% down, the yearly premium stays for the life of the loan.</li>
+</ul>
+<h3>HOA or condo association</h3>
+<ul>
+<li>You owe dues. The association can place a lien for unpaid dues.</li>
+<li>Owners can vote to reject a proposed budget and can ask to see the association's records.</li>
+</ul>
+<h3>Maintenance</h3>
+<ul>
+<li>No official budget figure exists. The common "1% of the home's value a year" is folk advice, not a rule.</li>
+<li>Low-income households may qualify for weatherization work through local agencies.</li>
+</ul>
+<h3>Permits and contractors</h3>
+<ul>
+<li>Electrical work needs a permit and an inspection.</li>
+<li>Building permits come from your city or county, so "do I need a permit?" is a local question. Call before you start.</li>
+<li>Check any contractor on the state's lookup the day you hire. Get three written bids and a written contract. Do not pay in full until the job is done.</li>
+<li>An unpaid subcontractor or supplier can claim a lien on your house even if you paid the contractor. Ask for lien releases before the final payment.</li>
+</ul>
+<h3>Taxes</h3>
+<ul>
+<li>Washington has no personal income tax today.</li>
+<li>On a federal return, mortgage interest and property tax can be deducted only if you itemize. Insurance, HOA dues and repairs cannot.</li>
+<li>Keep your closing papers and receipts for improvements.</li>
+<li>The federal tax credits for home energy upgrades and solar ended after December 31, 2025.</li>
+</ul>
+<h3>Scams and junk mail</h3>
+<ul>
+<li><strong>Deed copy letters.</strong> Mail that looks official offers a copy of your deed for a high fee. The county sells the same copy for very little.</li>
+<li><strong>"Final notice" letters.</strong> Mail that looks like a check or a bill often leads to a sales pitch for a warranty.</li>
+<li>When in doubt, call your county or your loan servicer at a number you already have.</li>
+</ul>
+<h3>If money gets tight</h3>
+<ul>
+<li>Call the free <strong>Washington Homeownership Hotline, 1-877-894-4663</strong>, early.</li>
+<li>A housing counselor or a lawyer can refer you to the state's foreclosure mediation program. You cannot refer yourself.</li>
+</ul>
+<h3>Moving paperwork</h3>
+<ul>
+<li>Update your driver license address within 10 days of moving.</li>
+<li>Update your voter registration with the <a class="ext" href="https://www.sos.wa.gov/elections/">Secretary of State</a>.</li>
+<li>File a change of address with the <a class="ext" href="https://www.usps.com/manage/forward.htm">Postal Service</a>.</li>
+<li>Set up utilities. Cities often ask for a recorded deed, so this usually happens in the first days after closing.</li>
+</ul>
+<h2>Official links</h2>
+<ul>
+<li><a class="ext" href="https://www.insurance.wa.gov/what-homeowner-insurance">What homeowner insurance is</a> (Insurance Commissioner)</li>
+<li><a class="ext" href="https://insurance.wa.gov/what-consider-buying-homeowner-insurance">What to consider when buying homeowner insurance</a></li>
+<li><a class="ext" href="https://www.insurance.wa.gov/insurance-resources/natural-disasters/disaster-preparedness/flood-insurance">Flood insurance</a> and <a class="ext" href="https://www.insurance.wa.gov/insurance-resources/natural-disasters/disaster-preparedness/earthquake-insurance">earthquake insurance</a></li>
+<li><a class="ext" href="https://www.insurance.wa.gov/insurance-resources/natural-disasters/disaster-preparedness/wildfires-and-insurance">Wildfires and insurance</a></li>
+<li><a class="ext" href="https://www.insurance.wa.gov/complaint-comparison-tool">Compare insurer complaint records</a></li>
+<li><a class="ext" href="https://dor.wa.gov/taxes-rates/property-tax/property-tax-exemptions-and-deferrals">Property tax exemptions and deferrals</a> (Department of Revenue)</li>
+<li><a class="ext" href="https://dor.wa.gov/taxes-rates/property-tax/county-assessor-and-treasurer-websites">Find your county assessor and treasurer</a></li>
+<li><a class="ext" href="https://secure.lni.wa.gov/verify/">Verify a contractor</a> (Labor &amp; Industries)</li>
+<li><a class="ext" href="https://lni.wa.gov/licensing-permits/contractors/hiring-a-contractor/">Hiring a contractor</a></li>
+<li><a class="ext" href="https://www.atg.wa.gov/foreclosure-and-mortgage-assistance">Foreclosure and mortgage help</a> (Attorney General)</li>
+<li><a class="ext" href="https://www.irs.gov/publications/p530">Tax information for homeowners</a> (IRS Publication 530)</li>
+</ul><p class="back"><a href="#home">Back to the eight steps</a></p></section><section class="view" id="tri-cities" aria-labelledby="tri-cities-h"><h1 id="tri-cities-h">Tri-Cities resources</h1><p>Everything else on this site applies statewide. This page lists local programs, offices and a few surprises for buyers in Richland, Kennewick, Pasco and West Richland, in Benton and Franklin counties.</p>
+<h2>Local down payment help</h2>
+<p>Kennewick, Pasco and Richland share one program through the Tri-Cities HOME Consortium. These terms are from its 2026-2027 guidelines.</p>
+<ul>
+<li><strong>How much:</strong> the lesser of $50,000 or 20% of the price.</li>
+<li><strong>What it is:</strong> a second loan at 0% with no payments. It is forgiven after 6 years for amounts up to $25,000, or 10 years for more. You repay it if you sell, refinance or move out before then.</li>
+<li><strong>Who qualifies:</strong> household income at or under 80% of the area median, a credit score of at least 620, and your own contribution of $1,000 or 1% of the price, whichever is more.</li>
+<li><strong>What else:</strong> HUD-approved counseling and a homebuyer class, and a home inside one of the three cities.</li>
+</ul>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>City</th>
+<th>Status on November 23, 2026</th>
+<th>Page</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Kennewick</td>
+<td>2026 funding is closed and reopens in 2027</td>
+<td><a class="ext" href="https://www.go2kennewick.com/732/Housing-Assistance">Housing assistance</a></td>
+</tr>
+<tr>
+<td>Richland</td>
+<td>The apply link is live. The page does not say whether funds remain.</td>
+<td><a class="ext" href="https://www.richlandwa.gov/residents/housing/housing-programs-for-low-income-families">Housing programs</a></td>
+</tr>
+<tr>
+<td>Pasco</td>
+<td>Unclear. The page still shows older forms. Call the city.</td>
+<td><a class="ext" href="https://www.pasco-wa.gov/912/Downpayment-Assistance">Down payment assistance</a></td>
+</tr>
+<tr>
+<td>West Richland and county areas</td>
+<td>No program found</td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<p>Funding opens and closes during the year. Call the city before you plan around it.</p>
+<h2>Classes and counseling</h2>
+<ul>
+<li><strong>Homebuyer classes</strong> are held in person in Kennewick and Richland some months, and by video most days. <a class="ext" href="https://heretohome.org/homebuyer-education-classes-list/">See the class list</a>.</li>
+<li><strong>No HUD-approved housing counseling office is in the Tri-Cities.</strong> The nearest are in Yakima. The practical route is the free hotline, <strong>1-877-894-4663</strong>.</li>
+<li><a class="ext" href="https://www.habitatbuilds.com/homeownership/">Tri-County Partners Habitat for Humanity</a> serves Benton, Franklin and Walla Walla counties. Call to ask whether applications are open.</li>
+<li><a class="ext" href="https://www.bfcac.org">Benton Franklin Community Action Committee</a> has nothing for buyers, but offers <a class="ext" href="https://www.bfcac.org/weatherization/index.html">weatherization</a> and <a class="ext" href="https://www.bfcac.org/energy-assistance/index.html">energy bill help</a> for low-income owners.</li>
+</ul>
+<h2>USDA loans here</h2>
+<p>In November 2026, sample points inside Kennewick, Richland, Pasco and central West Richland showed as <strong>not eligible</strong> on USDA's map. Benton City, Prosser, Paterson, Connell, Mesa, Basin City and Kahlotus showed as eligible. The line does not follow city limits. <a class="ext" href="https://eligibility.sc.egov.usda.gov/eligibility/welcomeAction.do">Check the exact address</a>.</p>
+<h2>County offices</h2>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Office</th>
+<th>Benton County</th>
+<th>Franklin County</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Assessor: home value and parcel search</td>
+<td><a class="ext" href="https://www.bentoncountywa.gov/government/elected_officials/assessor/index.php">Assessor</a>, <a class="ext" href="https://property.spatialest.com/wa/benton#/">parcel search</a></td>
+<td><a class="ext" href="https://www.franklincountywa.gov/157/Assessor">Assessor</a>, <a class="ext" href="http://terra.co.franklin.wa.us/taxsifter/">parcel search</a></td>
+</tr>
+<tr>
+<td>Treasurer: property tax bills</td>
+<td><a class="ext" href="https://www.bentoncountywa.gov/government/elected_officials/treasurer/property_taxes/index.php">Treasurer</a></td>
+<td><a class="ext" href="https://www.franklincountywa.gov/407/Treasurer">Treasurer</a></td>
+</tr>
+<tr>
+<td>Auditor: recorded deeds</td>
+<td><a class="ext" href="https://www.bentoncountywa.gov/government/elected_officials/auditor/recording/index.php">Recording</a></td>
+<td><a class="ext" href="https://www.franklincountywa.gov/370/Recording-Records-Search">Recording search</a></td>
+</tr>
+<tr>
+<td>Tax relief programs</td>
+<td><a class="ext" href="https://www.bentoncountywa.gov/government/elected_officials/assessor/tax_relief.php">Benton</a></td>
+<td><a class="ext" href="https://www.franklincountywa.gov/170/Tax-Relief">Franklin</a></td>
+</tr>
+</tbody>
+</table></div>
+<h2>Irrigation districts: a local surprise</h2>
+<p>Many Tri-Cities homes get yard water from an irrigation district. The yearly charge is tied to the land. <strong>You owe it whether or not you use any water.</strong></p>
+<ul>
+<li><strong><a class="ext" href="https://kid.org/rates/">Kennewick Irrigation District</a></strong> bills owners directly. In some neighborhoods, called Private Line Areas, the owners pay to fix the pipes, not the district.</li>
+<li><strong><a class="ext" href="https://www.columbiairrigation.com/">Columbia Irrigation District</a></strong> and Kiona Irrigation District charges appear on the Benton County property tax bill.</li>
+<li><strong><a class="ext" href="https://www.scbid.org">South Columbia Basin Irrigation District</a></strong> is based in Pasco. Its charges are owed every year, and unpaid charges can become a lien.</li>
+<li><strong><a class="ext" href="https://www.pasco-wa.gov/495/City-Supplied-Irrigation-Water">The City of Pasco</a></strong> runs its own irrigation utility. West Richland charges an irrigation base fee all year.</li>
+</ul>
+<p><strong>Ask before you buy:</strong></p>
+<ol>
+<li>Which district is the parcel in?</li>
+<li>Is the water pressurized?</li>
+<li>Is it in a Private Line Area?</li>
+<li>Is this year's charge paid?</li>
+<li>Does the charge ride on the property tax bill?</li>
+</ol>
+<h2>Septic, wells and radon</h2>
+<ul>
+<li>The <a class="ext" href="https://bfhd.wa.gov/programs_services/on-site_sewage">Benton-Franklin Health District</a> keeps <a class="ext" href="https://www.bfhd.wa.gov/programs_services/on-site_sewage/sewage_system_records">septic records</a> on request. There is no online search.</li>
+<li>Starting <strong>February 1, 2027</strong>, a septic inspection is required when a property changes hands.</li>
+<li><a class="ext" href="https://www.bfhd.wa.gov/programs_services/water_health___lab_services/drinking_water/private_wells/">Private wells</a>: testing and upkeep are the owner's job. The health district runs a <a class="ext" href="https://www.bfhd.wa.gov/programs_services/water/drinking_water/testing">water testing lab</a>.</li>
+<li>No local radon page was found. Use the state <a class="ext" href="https://doh.wa.gov/community-and-environment/contaminants/radon">radon page</a>. EPA says to test every home.</li>
+</ul>
+<h2>Utilities</h2>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>City</th>
+<th>Water and sewer</th>
+<th>Electricity</th>
+<th>Start service</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Richland</td>
+<td>City</td>
+<td>City</td>
+<td><a class="ext" href="https://www.richlandwa.gov/residents/my-utilities">My utilities</a></td>
+</tr>
+<tr>
+<td>Kennewick</td>
+<td>City</td>
+<td>Benton PUD</td>
+<td><a class="ext" href="https://www.go2kennewick.com/752/Utilities">City utilities</a>, <a class="ext" href="https://www.bentonpud.org/manage-my-account/start-stop-service">Benton PUD</a></td>
+</tr>
+<tr>
+<td>Pasco</td>
+<td>City</td>
+<td>Franklin PUD (confirm for your address)</td>
+<td><a class="ext" href="https://www.pasco-wa.gov/278/New-Accounts">New accounts</a>, <a class="ext" href="https://www.franklinpud.com/programs-services/start-stop-transfer-service/">Franklin PUD</a></td>
+</tr>
+<tr>
+<td>West Richland</td>
+<td>City</td>
+<td>Ask the city which provider serves the address</td>
+<td><a class="ext" href="https://www.westrichland.org/172/How-to-Start-Your-Service">Start your service</a></td>
+</tr>
+</tbody>
+</table></div>
+<p>Kennewick's city page lists <a class="ext" href="https://www.cngc.com">Cascade Natural Gas</a> for natural gas. Some rural addresses are served by <a class="ext" href="https://www.bentonrea.org">Benton REA</a>.</p>
+<h2>Permits and lookups</h2>
+<ul>
+<li><strong>Building permits:</strong> <a class="ext" href="https://www.go2kennewick.com/281/Building-Permits">Kennewick</a>, <a class="ext" href="https://www.richlandwa.gov/departments/development-services/building-permitting">Richland</a>, <a class="ext" href="https://www.pasco-wa.gov/861/Get-a-Building-Permit">Pasco</a>, <a class="ext" href="https://www.westrichland.org/162/Development-Services-Resources">West Richland</a>, <a class="ext" href="https://www.bentoncountywa.gov/departments/community_development/building_division/index.php">Benton County</a>, <a class="ext" href="https://www.franklincountywa.gov/268/Building">Franklin County</a>.</li>
+<li>No city page promises a public search of a home's permit history. You may need to call.</li>
+<li><strong>Flood zones:</strong> <a class="ext" href="https://msc.fema.gov/portal/home">FEMA flood maps</a>.</li>
+<li><strong>Schools and transit:</strong> <a class="ext" href="https://www.rsd.edu/families/school-boundaries">Richland school boundaries</a>, <a class="ext" href="https://www.bft.org">Ben Franklin Transit</a>.</li>
+</ul><p class="back"><a href="#home">Back to the eight steps</a></p></section><section class="view" id="glossary" aria-labelledby="glossary-h"><h1 id="glossary-h">Glossary</h1><p class="lead">Plain one-sentence meanings for the words you will hear. Type to filter the list.</p><p><label for="gloss-filter">Filter terms</label> <input id="gloss-filter" type="search" autocomplete="off" placeholder="For example: escrow"></p><p id="gloss-empty" hidden>No term matches. Try a shorter word.</p><dl id="gloss-list"><div class="term"><dt>Actual cash value (ACV)</dt><dd>What an item is worth today after subtracting for age and wear.</dd></div><div class="term"><dt>Adjustable-rate mortgage (ARM)</dt><dd>A loan whose interest rate can go up or down after a starting period.</dd></div><div class="term"><dt>Appraisal</dt><dd>A licensed appraiser&#x27;s written opinion of what the home is worth, ordered for the lender.</dd></div><div class="term"><dt>APR (annual percentage rate)</dt><dd>The yearly cost of the loan, including interest and certain fees, shown as a percent.</dd></div><div class="term"><dt>Area median income (AMI)</dt><dd>The middle household income for an area, used to set income limits such as 65%, 80% or 120% of AMI.</dd></div><div class="term"><dt>Assessed value</dt><dd>The value the county assessor puts on your property for tax purposes.</dd></div><div class="term"><dt>Broker (real estate)</dt><dd>Washington&#x27;s license name for the person most people call a real estate agent.</dd></div><div class="term"><dt>Brokerage services agreement</dt><dd>The written contract between you and a real estate firm that appoints your broker and sets the term, exclusivity and pay.</dd></div><div class="term"><dt>Certificate of Eligibility (COE)</dt><dd>The VA document that shows a lender you qualify for the VA home loan benefit.</dd></div><div class="term"><dt>Chattel loan</dt><dd>A loan secured only by a manufactured home as personal property, not by land.</dd></div><div class="term"><dt>Closing</dt><dd>The point when the sale is finished: papers signed, money moved and deed recorded.</dd></div><div class="term"><dt>Closing agent / escrow agent</dt><dd>The neutral, licensed party that holds the money and documents and carries out both sides&#x27; written instructions to complete the sale.</dd></div><div class="term"><dt>Closing costs</dt><dd>The fees and prepaid items you pay to finish the loan and the purchase, separate from the down payment.</dd></div><div class="term"><dt>Closing Disclosure</dt><dd>The five-page federal form with your final loan terms and costs, which you must get at least three business days before closing.</dd></div><div class="term"><dt>Community property</dt><dd>Property acquired during a marriage or registered domestic partnership, which both spouses or partners own together under Washington law.</dd></div><div class="term"><dt>Condominium</dt><dd>A form of ownership where you own your unit and share ownership of the common elements with the other owners.</dd></div><div class="term"><dt>Conforming loan</dt><dd>A conventional loan small enough for Fannie Mae or Freddie Mac to buy.</dd></div><div class="term"><dt>Contingency</dt><dd>A condition in the contract that must be met, or that lets a party end the deal, by a deadline.</dd></div><div class="term"><dt>Conventional loan</dt><dd>Any home loan that is not insured or guaranteed by a government agency.</dd></div><div class="term"><dt>Credit score</dt><dd>A number calculated from your credit report that lenders use to judge how risky it is to lend to you.</dd></div><div class="term"><dt>Debt-to-income ratio (DTI)</dt><dd>Your total monthly debt payments divided by your gross monthly income.</dd></div><div class="term"><dt>Deductible</dt><dd>The part of a covered loss you pay before the insurer pays.</dd></div><div class="term"><dt>Deed</dt><dd>The document that transfers ownership of the home from the seller to you.</dd></div><div class="term"><dt>Deed of trust</dt><dd>The recorded document that pledges the home as security for the loan by conveying it to a neutral trustee, who can sell it if the loan is not paid.</dd></div><div class="term"><dt>Discount point</dt><dd>A fee equal to 1% of the loan amount that you may pay at closing to get a lower interest rate.</dd></div><div class="term"><dt>Down payment</dt><dd>The part of the purchase price you pay in cash instead of borrowing.</dd></div><div class="term"><dt>Down payment assistance (DPA)</dt><dd>Money, usually a second loan, that helps cover your down payment and closing costs.</dd></div><div class="term"><dt>Earnest money</dt><dd>A good-faith deposit you make after your offer is accepted, held by a neutral party and applied to your purchase.</dd></div><div class="term"><dt>Escrow (impound) account</dt><dd>An account your loan servicer uses to collect and pay your property taxes and homeowners insurance.</dd></div><div class="term"><dt>FHA loan</dt><dd>A loan made by an FHA-approved lender and insured by the Federal Housing Administration.</dd></div><div class="term"><dt>First-time homebuyer (Commission meaning)</dt><dd>A person who has not owned and lived in a primary residence at any time in the past three years.</dd></div><div class="term"><dt>Fixed-rate mortgage</dt><dd>A loan whose interest rate is set at the start and never changes.</dd></div><div class="term"><dt>Form 17</dt><dd>The common name for the seller disclosure statement whose content is set by state law.</dd></div><div class="term"><dt>Funding fee (VA)</dt><dd>A one-time charge on most VA loans, set as a percent of the loan amount, that can be added to the loan.</dd></div><div class="term"><dt>Gift funds</dt><dd>Money given to you, not loaned, by an allowed donor such as a relative for your down payment or closing costs.</dd></div><div class="term"><dt>HO-6 policy (unit-owner policy)</dt><dd>Insurance a condo owner buys for the inside of the unit, belongings and personal liability.</dd></div><div class="term"><dt>HOA dues (assessments)</dt><dd>Regular payments owners make to the association for shared costs, usually separate from the mortgage payment.</dd></div><div class="term"><dt>Home inspection</dt><dd>A licensed inspector&#x27;s visual check of a home&#x27;s current condition, written up in a report for you.</dd></div><div class="term"><dt>Home inspector</dt><dd>A person licensed by the Washington Department of Licensing to do home inspections.</dd></div><div class="term"><dt>Home warranty</dt><dd>A service contract that pays for some appliance and system repairs; it is not homeowners insurance.</dd></div><div class="term"><dt>Homebuyer education class</dt><dd>A free class of about five hours, sponsored by the Housing Finance Commission, that explains the buying process.</dd></div><div class="term"><dt>Homeowners insurance</dt><dd>Insurance on the house that your lender will require before closing.</dd></div><div class="term"><dt>Housing counseling</dt><dd>One-on-one advice from a trained counselor on buying, budgeting, credit or avoiding foreclosure.</dd></div><div class="term"><dt>Inspection contingency</dt><dd>A part of your offer that lets you negotiate or cancel based on what the inspection finds.</dd></div><div class="term"><dt>Irrigation assessment</dt><dd>The yearly charge an irrigation district puts on a parcel, owed whether or not you use the water.</dd></div><div class="term"><dt>Jumbo loan</dt><dd>A loan larger than the conforming loan limit.</dd></div><div class="term"><dt>Lender</dt><dd>The bank, credit union or company that actually loans you the money.</dd></div><div class="term"><dt>Lender&#x27;s title policy</dt><dd>Title insurance that protects only the lender, up to the loan amount.</dd></div><div class="term"><dt>Lien</dt><dd>A legal claim on your property for an unpaid debt.</dd></div><div class="term"><dt>Limited practice officer (LPO)</dt><dd>A non-lawyer licensed by the Washington Supreme Court to select, prepare and complete approved closing documents.</dd></div><div class="term"><dt>Loan Estimate</dt><dd>The three-page federal form showing a loan&#x27;s estimated terms and costs, due within three business days of applying.</dd></div><div class="term"><dt>Loan officer / mortgage loan originator (MLO)</dt><dd>The licensed or registered person who takes your application and helps you get the loan.</dd></div><div class="term"><dt>Manufactured home</dt><dd>A factory-built home on a permanent frame, built to the HUD Code on or after June 15, 1976.</dd></div><div class="term"><dt>Master policy</dt><dd>The association&#x27;s insurance on shared buildings and common areas, paid from dues.</dd></div><div class="term"><dt>Mortgage broker</dt><dd>A person or company that does not lend money but helps you find a lender or loan.</dd></div><div class="term"><dt>Mortgage insurance</dt><dd>Insurance you pay for that protects the lender, not you, if you stop paying.</dd></div><div class="term"><dt>Mutual acceptance</dt><dd>The moment both buyer and seller have signed and agreed to the same contract terms, from which contract and disclosure deadlines run.</dd></div><div class="term"><dt>Owner&#x27;s title policy</dt><dd>Optional title insurance that protects you, the buyer, usually for the full price.</dd></div><div class="term"><dt>Payment-deferred loan (silent second)</dt><dd>A second loan with no monthly payments that comes due later, such as when you sell, refinance or move out.</dd></div><div class="term"><dt>PITI</dt><dd>Principal, interest, taxes and insurance: the four basic parts of a monthly mortgage payment.</dd></div><div class="term"><dt>PMI (private mortgage insurance)</dt><dd>Mortgage insurance on a conventional loan, usually required when the down payment is under 20%.</dd></div><div class="term"><dt>Pre-inspection agreement</dt><dd>The written contract you and the inspector sign that says what will and will not be inspected and what it costs.</dd></div><div class="term"><dt>Preapproval / prequalification</dt><dd>A lender&#x27;s letter saying about how much it would likely lend you; neither is a guaranteed loan offer.</dd></div><div class="term"><dt>Preliminary commitment (preliminary title report)</dt><dd>The title company&#x27;s offer to issue a policy subject to listed exceptions; by statute it is not a statement about the condition of title.</dd></div><div class="term"><dt>PUD (planned unit development)</dt><dd>A lender&#x27;s term for a development where you own your lot and home and must belong to an HOA that owns common property.</dd></div><div class="term"><dt>Radon</dt><dd>A natural radioactive gas you cannot see or smell that can build up indoors.</dd></div><div class="term"><dt>Rate lock</dt><dd>A lender&#x27;s promise to hold your interest rate for a set time, usually 30, 45 or 60 days.</dd></div><div class="term"><dt>Real estate excise tax (REET)</dt><dd>Washington&#x27;s tax on the sale of real estate, owed by the seller.</dd></div><div class="term"><dt>Recording</dt><dd>Filing the deed and deed of trust with the county auditor so they become public record.</dd></div><div class="term"><dt>Renovation loan</dt><dd>One loan that covers both buying the home and paying for repairs.</dd></div><div class="term"><dt>Replacement cost</dt><dd>What it costs to repair or replace something at today&#x27;s prices with no subtraction for age.</dd></div><div class="term"><dt>Resale certificate</dt><dd>A packet from the HOA, provided through the seller, showing dues, special assessments, reserves, insurance, lawsuits and rules for a unit being resold.</dd></div><div class="term"><dt>Rescind</dt><dd>To cancel the contract and undo the deal, as the buyer may do within three business days of getting the seller disclosure statement.</dd></div><div class="term"><dt>Reserve study</dt><dd>The association&#x27;s long-range plan for paying for major repairs and replacements.</dd></div><div class="term"><dt>Seller disclosure statement</dt><dd>The form required by state law on which the seller answers, from actual knowledge, questions about the property; it is not a warranty.</dd></div><div class="term"><dt>Servicer</dt><dd>The company that collects your mortgage payment and manages the loan day to day.</dd></div><div class="term"><dt>Sewer scope</dt><dd>A camera inspection of the sewer pipe.</dd></div><div class="term"><dt>Special assessment</dt><dd>A one-time or extra HOA charge for a cost not covered by regular dues or reserves.</dd></div><div class="term"><dt>Statutory warranty deed</dt><dd>A deed in which the seller promises they own the property, that it is free of claims, and that they will defend the buyer&#x27;s title.</dd></div><div class="term"><dt>Structural pest inspector (SPI)</dt><dd>A person licensed by the Washington State Department of Agriculture to inspect for wood-destroying organisms.</dd></div><div class="term"><dt>Title elimination</dt><dd>The Washington process that cancels a manufactured home&#x27;s vehicle-style title and records the home as real property with the land.</dd></div><div class="term"><dt>Title insurance</dt><dd>A one-time-premium policy that covers losses from hidden problems with ownership, such as old liens or forged documents.</dd></div><div class="term"><dt>Underwriter / underwriting</dt><dd>The lender&#x27;s review of your income, debts, credit and the property to decide whether to approve the loan.</dd></div><div class="term"><dt>USDA Direct loan</dt><dd>A home loan made by USDA itself to low- and very-low-income buyers in eligible rural areas.</dd></div><div class="term"><dt>USDA Guaranteed loan</dt><dd>A zero-down home loan made by a USDA-approved lender and backed by USDA, for eligible rural areas and incomes.</dd></div><div class="term"><dt>VA-backed loan</dt><dd>A home loan from a private lender with part of it guaranteed by the Department of Veterans Affairs, for eligible veterans, service members and survivors.</dd></div><div class="term"><dt>Walk-through</dt><dd>Your last visit to the home before signing, to confirm its condition and any agreed repairs.</dd></div><div class="term"><dt>Wire recall</dt><dd>A request to your bank to pull back a wire transfer, which works best if made at once.</dd></div></dl><p class="back"><a href="#home">Back to the eight steps</a></p></section><section class="view" id="checklist" aria-labelledby="checklist-h"><h1 id="checklist-h">Checklist</h1><p class="lead">Every step on one page. Your ticks are saved in this browser only.</p><h2>Get ready</h2><ul class="checks"><li><input type="checkbox" id="chk-0-0"><label for="chk-0-0">Pull my free credit reports and fix any errors</label></li><li><input type="checkbox" id="chk-0-1"><label for="chk-0-1">Add up my savings for a down payment, closing costs and a cushion</label></li><li><input type="checkbox" id="chk-0-2"><label for="chk-0-2">Work out my debt-to-income ratio</label></li><li><input type="checkbox" id="chk-0-3"><label for="chk-0-3">Stop opening new credit</label></li></ul><h2>Learn and ask for help</h2><ul class="checks"><li><input type="checkbox" id="chk-1-0"><label for="chk-1-0">Take the free homebuyer class and save the certificate</label></li><li><input type="checkbox" id="chk-1-1"><label for="chk-1-1">Call the Homeownership Hotline (1-877-894-4663) if I want a counselor</label></li><li><input type="checkbox" id="chk-1-2"><label for="chk-1-2">Ask about state and local down payment help</label></li></ul><h2>Shop for a loan</h2><ul class="checks"><li><input type="checkbox" id="chk-2-0"><label for="chk-2-0">Gather pay stubs, W-2s, tax returns and bank statements</label></li><li><input type="checkbox" id="chk-2-1"><label for="chk-2-1">Check each loan officer&#x27;s license</label></li><li><input type="checkbox" id="chk-2-2"><label for="chk-2-2">Get Loan Estimates from more than one lender</label></li><li><input type="checkbox" id="chk-2-3"><label for="chk-2-3">Compare them and choose a lender</label></li></ul><h2>Find a home</h2><ul class="checks"><li><input type="checkbox" id="chk-3-0"><label for="chk-3-0">Check my broker&#x27;s license</label></li><li><input type="checkbox" id="chk-3-1"><label for="chk-3-1">Read the brokerage services agreement, including the pay terms, before signing</label></li><li><input type="checkbox" id="chk-3-2"><label for="chk-3-2">Ask what type of home it is and what that changes</label></li><li><input type="checkbox" id="chk-3-3"><label for="chk-3-3">Tri-Cities: ask which irrigation district the home is in</label></li></ul><h2>Offer and contract</h2><ul class="checks"><li><input type="checkbox" id="chk-4-0"><label for="chk-4-0">Go through every blank and every deadline on the contract with my broker</label></li><li><input type="checkbox" id="chk-4-1"><label for="chk-4-1">Write down each contingency deadline</label></li><li><input type="checkbox" id="chk-4-2"><label for="chk-4-2">Deliver earnest money on time</label></li></ul><h2>Disclosure and inspection</h2><ul class="checks"><li><input type="checkbox" id="chk-5-0"><label for="chk-5-0">Read the seller&#x27;s disclosure form within three business days</label></li><li><input type="checkbox" id="chk-5-1"><label for="chk-5-1">Check my inspector&#x27;s license and read the pre-inspection agreement</label></li><li><input type="checkbox" id="chk-5-2"><label for="chk-5-2">Attend the inspection</label></li><li><input type="checkbox" id="chk-5-3"><label for="chk-5-3">Order any extra checks: sewer line, septic, well, radon, pests</label></li><li><input type="checkbox" id="chk-5-4"><label for="chk-5-4">Respond to the seller before my inspection deadline</label></li></ul><h2>Finish the loan</h2><ul class="checks"><li><input type="checkbox" id="chk-6-0"><label for="chk-6-0">Tell my lender to proceed and lock my rate</label></li><li><input type="checkbox" id="chk-6-1"><label for="chk-6-1">Read the title commitment&#x27;s list of exceptions</label></li><li><input type="checkbox" id="chk-6-2"><label for="chk-6-2">Get more than one homeowners insurance quote</label></li><li><input type="checkbox" id="chk-6-3"><label for="chk-6-3">Take on no new debt</label></li></ul><h2>Closing</h2><ul class="checks"><li><input type="checkbox" id="chk-7-0"><label for="chk-7-0">Read the Closing Disclosure and compare it with my Loan Estimate</label></li><li><input type="checkbox" id="chk-7-1"><label for="chk-7-1">Confirm wiring instructions by calling a number I already know</label></li><li><input type="checkbox" id="chk-7-2"><label for="chk-7-2">Do the final walk-through</label></li><li><input type="checkbox" id="chk-7-3"><label for="chk-7-3">Bring ID and my payment to signing</label></li></ul><h2>After I move in</h2><ul class="checks"><li><input type="checkbox" id="chk-8-0"><label for="chk-8-0">Set up utilities and update my address</label></li><li><input type="checkbox" id="chk-8-1"><label for="chk-8-1">Look up my parcel and mark April 30 and October 31 for property tax</label></li><li><input type="checkbox" id="chk-8-2"><label for="chk-8-2">Keep my closing papers in a safe place</label></li><li><input type="checkbox" id="chk-8-3"><label for="chk-8-3">Watch for scam mail about deeds and warranties</label></li></ul><p><button type="button" id="chk-clear">Clear all ticks</button> <span id="chk-note" role="status"></span></p><p class="back"><a href="#home">Back to the eight steps</a></p></section><section class="view" id="about" aria-labelledby="about-h"><h1 id="about-h">About this guide</h1><h2>What this is</h2>
+<p>A free, plain-language overview of how to buy a first home in Washington State. It is an independent guide. It is not a government site, and it is not run by a lender, a real estate firm or a title company.</p>
+<p>There is nothing to sign up for. There are no ads and no tracking. The checklist saves your ticks in your own browser and nowhere else.</p>
+<h2>How it was made</h2>
+<p>This site was built with AI assistance. The facts were gathered in November 2026 from official sources: state and federal agencies, Washington statutes and rules, and the Washington State Housing Finance Commission. A sample of the most important claims was then re-read on the live official pages. Not every sentence was checked that way.</p>
+<p><strong>Last reviewed: November 23, 2026.</strong></p>
+<h2>What it is not</h2>
+<p>This is education, not legal, lending, tax or insurance advice. Rules and numbers change. Before you act on anything here, confirm it with the official source or a licensed professional.</p>
+<p>No lender, broker, inspector, insurer or contractor is recommended anywhere on this site. An agency or nonprofit is listed only because an official page lists it.</p>
+<h2>What we left out, on purpose</h2>
+<p>Some things buyers want to know are not published by any official source. Typical earnest money, typical inspection and appraisal prices, and the usual number of days for each contract deadline all live in private contract forms and in local custom. We say "set in your contract" in those places and do not guess.</p>
+<h2>Things due to change soon</h2>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>When</th>
+<th>What</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Late 2026</td>
+<td>New loan limits for 2027 are announced</td>
+</tr>
+<tr>
+<td>January 1, 2027</td>
+<td>A new version of the seller disclosure form takes effect</td>
+</tr>
+<tr>
+<td>January 1, 2027</td>
+<td>FHA changes how it picks the credit score it uses. The score tiers stay the same.</td>
+</tr>
+<tr>
+<td>February 1, 2027</td>
+<td>A septic inspection is required when a property changes hands</td>
+</tr>
+<tr>
+<td>January 1, 2028</td>
+<td>Washington's older condo and HOA laws are replaced by the newer one</td>
+</tr>
+</tbody>
+</table></div>
+<h2>Main sources</h2>
+<ul>
+<li><a class="ext" href="https://www.consumerfinance.gov/owning-a-home/">Consumer Financial Protection Bureau: Buying a house</a></li>
+<li><a class="ext" href="https://heretohome.org/home-buyers/">Washington State Housing Finance Commission: Here to Home</a></li>
+<li><a class="ext" href="https://app.leg.wa.gov/RCW/default.aspx?cite=64.06&amp;full=true">Washington State Legislature: seller disclosure law</a></li>
+<li><a class="ext" href="https://dol.wa.gov/professional-licenses/home-inspectors">Washington Department of Licensing: home inspectors</a></li>
+<li><a class="ext" href="https://dfi.wa.gov/consumers/verify-license">Washington Department of Financial Institutions: verify a license</a></li>
+<li><a class="ext" href="https://www.insurance.wa.gov/what-homeowner-insurance">Washington Office of the Insurance Commissioner</a></li>
+<li><a class="ext" href="https://dor.wa.gov/taxes-rates/property-tax/pay-my-property-tax-or-appeal-my-property-assessment">Washington Department of Revenue: property tax</a></li>
+</ul><p class="back"><a href="#home">Back to the eight steps</a></p></section>
+</div></main>
+<footer class="site"><div class="wrap">
+<p><strong>Education, not advice.</strong> Rules and numbers change. Confirm anything important with the official source or a licensed professional before you act.</p>
+<p>An independent guide. Not a government site, lender, real estate firm or inspector. Built with AI assistance from official sources gathered in November 2026. Last reviewed November 23, 2026. <a href="#about">How this guide was made</a>.</p>
+</div></footer>
+<script>
+(function(){
+  var views=[].slice.call(document.querySelectorAll('.view'));
+  var links=[].slice.call(document.querySelectorAll('nav a'));
+  function show(){
+    var name=(location.hash||'').replace(/^#/,'')||'home';
+    var el=document.getElementById(name);
+    var view=el?el.closest('.view'):null;
+    if(!view){view=document.getElementById('home');el=null;}
+    views.forEach(function(v){v.hidden=(v!==view);});
+    links.forEach(function(a){ if(a.getAttribute('data-view')===view.id){a.setAttribute('aria-current','page');}else{a.removeAttribute('aria-current');} });
+    if(el&&el!==view){el.scrollIntoView();}else{window.scrollTo(0,0);}
+  }
+  window.addEventListener('hashchange',show);
+  show();
+
+  var f=document.getElementById('gloss-filter');
+  if(f){
+    var terms=[].slice.call(document.querySelectorAll('#gloss-list .term'));
+    var empty=document.getElementById('gloss-empty');
+    f.addEventListener('input',function(){
+      var q=f.value.trim().toLowerCase(),n=0;
+      terms.forEach(function(t){var hit=!q||t.textContent.toLowerCase().indexOf(q)>-1;t.hidden=!hit;if(hit){n++;}});
+      empty.hidden=n>0;
+    });
+  }
+
+  var KEY='wa-first-home-checklist';
+  var boxes=[].slice.call(document.querySelectorAll('.checks input'));
+  var saved={};
+  try{saved=JSON.parse(localStorage.getItem(KEY)||'{}')||{};}catch(e){saved={};}
+  function save(){try{localStorage.setItem(KEY,JSON.stringify(saved));}catch(e){}}
+  boxes.forEach(function(b){
+    b.checked=!!saved[b.id];
+    b.addEventListener('change',function(){saved[b.id]=b.checked;save();});
+  });
+  var clr=document.getElementById('chk-clear');
+  if(clr){clr.addEventListener('click',function(){saved={};save();boxes.forEach(function(b){b.checked=false;});document.getElementById('chk-note').textContent='All ticks cleared.';});}
+})();
+</script>
+</body>
+</html>

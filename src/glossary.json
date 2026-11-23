@@ -1,0 +1,354 @@
+{
+ "APR (annual percentage rate)": {
+  "definition": "The yearly cost of the loan, including interest and certain fees, shown as a percent.",
+  "working_definition": false
+ },
+ "Actual cash value (ACV)": {
+  "definition": "What an item is worth today after subtracting for age and wear.",
+  "working_definition": false
+ },
+ "Adjustable-rate mortgage (ARM)": {
+  "definition": "A loan whose interest rate can go up or down after a starting period.",
+  "working_definition": false
+ },
+ "Appraisal": {
+  "definition": "A licensed appraiser's written opinion of what the home is worth, ordered for the lender.",
+  "working_definition": false
+ },
+ "Area median income (AMI)": {
+  "definition": "The middle household income for an area, used to set income limits such as 65%, 80% or 120% of AMI.",
+  "working_definition": false
+ },
+ "Assessed value": {
+  "definition": "The value the county assessor puts on your property for tax purposes.",
+  "working_definition": false
+ },
+ "Broker (real estate)": {
+  "definition": "Washington's license name for the person most people call a real estate agent.",
+  "working_definition": false
+ },
+ "Brokerage services agreement": {
+  "definition": "The written contract between you and a real estate firm that appoints your broker and sets the term, exclusivity and pay.",
+  "working_definition": false
+ },
+ "Certificate of Eligibility (COE)": {
+  "definition": "The VA document that shows a lender you qualify for the VA home loan benefit.",
+  "working_definition": false
+ },
+ "Chattel loan": {
+  "definition": "A loan secured only by a manufactured home as personal property, not by land.",
+  "working_definition": false
+ },
+ "Closing": {
+  "definition": "The point when the sale is finished: papers signed, money moved and deed recorded.",
+  "working_definition": false
+ },
+ "Closing Disclosure": {
+  "definition": "The five-page federal form with your final loan terms and costs, which you must get at least three business days before closing.",
+  "working_definition": false
+ },
+ "Closing agent / escrow agent": {
+  "definition": "The neutral, licensed party that holds the money and documents and carries out both sides' written instructions to complete the sale.",
+  "working_definition": false
+ },
+ "Closing costs": {
+  "definition": "The fees and prepaid items you pay to finish the loan and the purchase, separate from the down payment.",
+  "working_definition": false
+ },
+ "Community property": {
+  "definition": "Property acquired during a marriage or registered domestic partnership, which both spouses or partners own together under Washington law.",
+  "working_definition": false
+ },
+ "Condominium": {
+  "definition": "A form of ownership where you own your unit and share ownership of the common elements with the other owners.",
+  "working_definition": false
+ },
+ "Conforming loan": {
+  "definition": "A conventional loan small enough for Fannie Mae or Freddie Mac to buy.",
+  "working_definition": false
+ },
+ "Contingency": {
+  "definition": "A condition in the contract that must be met, or that lets a party end the deal, by a deadline.",
+  "working_definition": false
+ },
+ "Conventional loan": {
+  "definition": "Any home loan that is not insured or guaranteed by a government agency.",
+  "working_definition": false
+ },
+ "Credit score": {
+  "definition": "A number calculated from your credit report that lenders use to judge how risky it is to lend to you.",
+  "working_definition": false
+ },
+ "Debt-to-income ratio (DTI)": {
+  "definition": "Your total monthly debt payments divided by your gross monthly income.",
+  "working_definition": false
+ },
+ "Deductible": {
+  "definition": "The part of a covered loss you pay before the insurer pays.",
+  "working_definition": false
+ },
+ "Deed": {
+  "definition": "The document that transfers ownership of the home from the seller to you.",
+  "working_definition": false
+ },
+ "Deed of trust": {
+  "definition": "The recorded document that pledges the home as security for the loan by conveying it to a neutral trustee, who can sell it if the loan is not paid.",
+  "working_definition": false
+ },
+ "Discount point": {
+  "definition": "A fee equal to 1% of the loan amount that you may pay at closing to get a lower interest rate.",
+  "working_definition": false
+ },
+ "Down payment": {
+  "definition": "The part of the purchase price you pay in cash instead of borrowing.",
+  "working_definition": false
+ },
+ "Down payment assistance (DPA)": {
+  "definition": "Money, usually a second loan, that helps cover your down payment and closing costs.",
+  "working_definition": false
+ },
+ "Earnest money": {
+  "definition": "A good-faith deposit you make after your offer is accepted, held by a neutral party and applied to your purchase.",
+  "working_definition": false
+ },
+ "Escrow (impound) account": {
+  "definition": "An account your loan servicer uses to collect and pay your property taxes and homeowners insurance.",
+  "working_definition": false
+ },
+ "FHA loan": {
+  "definition": "A loan made by an FHA-approved lender and insured by the Federal Housing Administration.",
+  "working_definition": false
+ },
+ "First-time homebuyer (Commission meaning)": {
+  "definition": "A person who has not owned and lived in a primary residence at any time in the past three years.",
+  "working_definition": false
+ },
+ "Fixed-rate mortgage": {
+  "definition": "A loan whose interest rate is set at the start and never changes.",
+  "working_definition": false
+ },
+ "Form 17": {
+  "definition": "The common name for the seller disclosure statement whose content is set by state law.",
+  "working_definition": false
+ },
+ "Funding fee (VA)": {
+  "definition": "A one-time charge on most VA loans, set as a percent of the loan amount, that can be added to the loan.",
+  "working_definition": false
+ },
+ "Gift funds": {
+  "definition": "Money given to you, not loaned, by an allowed donor such as a relative for your down payment or closing costs.",
+  "working_definition": false
+ },
+ "HO-6 policy (unit-owner policy)": {
+  "definition": "Insurance a condo owner buys for the inside of the unit, belongings and personal liability.",
+  "working_definition": false
+ },
+ "HOA dues (assessments)": {
+  "definition": "Regular payments owners make to the association for shared costs, usually separate from the mortgage payment.",
+  "working_definition": false
+ },
+ "Home inspection": {
+  "definition": "A licensed inspector's visual check of a home's current condition, written up in a report for you.",
+  "working_definition": false
+ },
+ "Home inspector": {
+  "definition": "A person licensed by the Washington Department of Licensing to do home inspections.",
+  "working_definition": false
+ },
+ "Home warranty": {
+  "definition": "A service contract that pays for some appliance and system repairs; it is not homeowners insurance.",
+  "working_definition": false
+ },
+ "Homebuyer education class": {
+  "definition": "A free class of about five hours, sponsored by the Housing Finance Commission, that explains the buying process.",
+  "working_definition": false
+ },
+ "Homeowners insurance": {
+  "definition": "Insurance on the house that your lender will require before closing.",
+  "working_definition": false
+ },
+ "Housing counseling": {
+  "definition": "One-on-one advice from a trained counselor on buying, budgeting, credit or avoiding foreclosure.",
+  "working_definition": false
+ },
+ "Inspection contingency": {
+  "definition": "A part of your offer that lets you negotiate or cancel based on what the inspection finds.",
+  "working_definition": false
+ },
+ "Irrigation assessment": {
+  "definition": "The yearly charge an irrigation district puts on a parcel, owed whether or not you use the water.",
+  "working_definition": false
+ },
+ "Jumbo loan": {
+  "definition": "A loan larger than the conforming loan limit.",
+  "working_definition": false
+ },
+ "Lender": {
+  "definition": "The bank, credit union or company that actually loans you the money.",
+  "working_definition": false
+ },
+ "Lender's title policy": {
+  "definition": "Title insurance that protects only the lender, up to the loan amount.",
+  "working_definition": false
+ },
+ "Lien": {
+  "definition": "A legal claim on your property for an unpaid debt.",
+  "working_definition": false
+ },
+ "Limited practice officer (LPO)": {
+  "definition": "A non-lawyer licensed by the Washington Supreme Court to select, prepare and complete approved closing documents.",
+  "working_definition": false
+ },
+ "Loan Estimate": {
+  "definition": "The three-page federal form showing a loan's estimated terms and costs, due within three business days of applying.",
+  "working_definition": false
+ },
+ "Loan officer / mortgage loan originator (MLO)": {
+  "definition": "The licensed or registered person who takes your application and helps you get the loan.",
+  "working_definition": false
+ },
+ "Manufactured home": {
+  "definition": "A factory-built home on a permanent frame, built to the HUD Code on or after June 15, 1976.",
+  "working_definition": false
+ },
+ "Master policy": {
+  "definition": "The association's insurance on shared buildings and common areas, paid from dues.",
+  "working_definition": false
+ },
+ "Mortgage broker": {
+  "definition": "A person or company that does not lend money but helps you find a lender or loan.",
+  "working_definition": false
+ },
+ "Mortgage insurance": {
+  "definition": "Insurance you pay for that protects the lender, not you, if you stop paying.",
+  "working_definition": false
+ },
+ "Mutual acceptance": {
+  "definition": "The moment both buyer and seller have signed and agreed to the same contract terms, from which contract and disclosure deadlines run.",
+  "working_definition": true
+ },
+ "Owner's title policy": {
+  "definition": "Optional title insurance that protects you, the buyer, usually for the full price.",
+  "working_definition": false
+ },
+ "PITI": {
+  "definition": "Principal, interest, taxes and insurance: the four basic parts of a monthly mortgage payment.",
+  "working_definition": false
+ },
+ "PMI (private mortgage insurance)": {
+  "definition": "Mortgage insurance on a conventional loan, usually required when the down payment is under 20%.",
+  "working_definition": false
+ },
+ "PUD (planned unit development)": {
+  "definition": "A lender's term for a development where you own your lot and home and must belong to an HOA that owns common property.",
+  "working_definition": false
+ },
+ "Payment-deferred loan (silent second)": {
+  "definition": "A second loan with no monthly payments that comes due later, such as when you sell, refinance or move out.",
+  "working_definition": false
+ },
+ "Pre-inspection agreement": {
+  "definition": "The written contract you and the inspector sign that says what will and will not be inspected and what it costs.",
+  "working_definition": false
+ },
+ "Preapproval / prequalification": {
+  "definition": "A lender's letter saying about how much it would likely lend you; neither is a guaranteed loan offer.",
+  "working_definition": false
+ },
+ "Preliminary commitment (preliminary title report)": {
+  "definition": "The title company's offer to issue a policy subject to listed exceptions; by statute it is not a statement about the condition of title.",
+  "working_definition": false
+ },
+ "Radon": {
+  "definition": "A natural radioactive gas you cannot see or smell that can build up indoors.",
+  "working_definition": false
+ },
+ "Rate lock": {
+  "definition": "A lender's promise to hold your interest rate for a set time, usually 30, 45 or 60 days.",
+  "working_definition": false
+ },
+ "Real estate excise tax (REET)": {
+  "definition": "Washington's tax on the sale of real estate, owed by the seller.",
+  "working_definition": false
+ },
+ "Recording": {
+  "definition": "Filing the deed and deed of trust with the county auditor so they become public record.",
+  "working_definition": false
+ },
+ "Renovation loan": {
+  "definition": "One loan that covers both buying the home and paying for repairs.",
+  "working_definition": false
+ },
+ "Replacement cost": {
+  "definition": "What it costs to repair or replace something at today's prices with no subtraction for age.",
+  "working_definition": false
+ },
+ "Resale certificate": {
+  "definition": "A packet from the HOA, provided through the seller, showing dues, special assessments, reserves, insurance, lawsuits and rules for a unit being resold.",
+  "working_definition": false
+ },
+ "Rescind": {
+  "definition": "To cancel the contract and undo the deal, as the buyer may do within three business days of getting the seller disclosure statement.",
+  "working_definition": false
+ },
+ "Reserve study": {
+  "definition": "The association's long-range plan for paying for major repairs and replacements.",
+  "working_definition": false
+ },
+ "Seller disclosure statement": {
+  "definition": "The form required by state law on which the seller answers, from actual knowledge, questions about the property; it is not a warranty.",
+  "working_definition": false
+ },
+ "Servicer": {
+  "definition": "The company that collects your mortgage payment and manages the loan day to day.",
+  "working_definition": false
+ },
+ "Sewer scope": {
+  "definition": "A camera inspection of the sewer pipe.",
+  "working_definition": true
+ },
+ "Special assessment": {
+  "definition": "A one-time or extra HOA charge for a cost not covered by regular dues or reserves.",
+  "working_definition": false
+ },
+ "Statutory warranty deed": {
+  "definition": "A deed in which the seller promises they own the property, that it is free of claims, and that they will defend the buyer's title.",
+  "working_definition": false
+ },
+ "Structural pest inspector (SPI)": {
+  "definition": "A person licensed by the Washington State Department of Agriculture to inspect for wood-destroying organisms.",
+  "working_definition": false
+ },
+ "Title elimination": {
+  "definition": "The Washington process that cancels a manufactured home's vehicle-style title and records the home as real property with the land.",
+  "working_definition": false
+ },
+ "Title insurance": {
+  "definition": "A one-time-premium policy that covers losses from hidden problems with ownership, such as old liens or forged documents.",
+  "working_definition": false
+ },
+ "USDA Direct loan": {
+  "definition": "A home loan made by USDA itself to low- and very-low-income buyers in eligible rural areas.",
+  "working_definition": false
+ },
+ "USDA Guaranteed loan": {
+  "definition": "A zero-down home loan made by a USDA-approved lender and backed by USDA, for eligible rural areas and incomes.",
+  "working_definition": false
+ },
+ "Underwriter / underwriting": {
+  "definition": "The lender's review of your income, debts, credit and the property to decide whether to approve the loan.",
+  "working_definition": false
+ },
+ "VA-backed loan": {
+  "definition": "A home loan from a private lender with part of it guaranteed by the Department of Veterans Affairs, for eligible veterans, service members and survivors.",
+  "working_definition": false
+ },
+ "Walk-through": {
+  "definition": "Your last visit to the home before signing, to confirm its condition and any agreed repairs.",
+  "working_definition": true
+ },
+ "Wire recall": {
+  "definition": "A request to your bank to pull back a wire transfer, which works best if made at once.",
+  "working_definition": false
+ }
+}
